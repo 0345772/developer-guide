@@ -1,4 +1,5 @@
-export function someFn(arg:number) {
+export function someFn(arg: number) {
     console.log("Den, Helo, my frend!111");
-    return arg + 5
+    return arg + 5;
 }
+
