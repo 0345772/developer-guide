@@ -8,6 +8,6 @@ export const Counter = () => {
     <div className={cls.counter}>
       <h2>{count}</h2>
       <button className={cls.btn} onClick={inc}> inc</button>
-    </div>
+    </div> 
   )
 }
