@@ -1,0 +1,5 @@
+{
+    "i18next.i18nPaths": "d:/work/MY-COURSE/developer-guide/public/locales,d:/work/MY-COURSE/developer-guide/src/shared/config/i18n",
+    "i18n-easy.localesPaths": ["public/locales", "src/shared/config/i18n"],
+    "i18n-ally.localesPaths": ["public/locales", "src/shared/config/i18n"]
+}
