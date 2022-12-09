@@ -1,5 +1,11 @@
 {
     "i18next.i18nPaths": "d:/work/MY-COURSE/developer-guide/public/locales,d:/work/MY-COURSE/developer-guide/src/shared/config/i18n",
     "i18n-easy.localesPaths": ["public/locales", "src/shared/config/i18n"],
-    "i18n-ally.localesPaths": ["public/locales", "src/shared/config/i18n"]
+    "i18n-ally.localesPaths": ["public/locales", "src/shared/config/i18n"],
+    "eslint.alwaysShowStatus": true,
+    "eslint.run": "onType",
+    "eslint.debug": true,
+    "auto-close-tag.SublimeText3Mode": true,
+    "eslint.codeActionsOnSave.rules": null,
+    "eslint.onIgnoredFiles": "warn"
 }
