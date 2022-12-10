@@ -7,5 +7,10 @@
     "eslint.debug": true,
     "auto-close-tag.SublimeText3Mode": true,
     "eslint.codeActionsOnSave.rules": null,
-    "eslint.onIgnoredFiles": "warn"
+    "eslint.onIgnoredFiles": "warn",
+    "css.validate": false,
+    "less.validate": false,
+    "scss.validate": false,
+    "stylelint.enable": true,
+    "stylelint.validate": ["css", "scss"]
 }
