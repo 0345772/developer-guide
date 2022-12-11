@@ -28,21 +28,13 @@
         "@types/react-router-dom": "^5.3.3",
         "@types/webpack": "^5.28.0",
         "@types/webpack-dev-server": "^4.7.2",
-<<<<<<< HEAD
         "@typescript-eslint/eslint-plugin": "^5.12.1",
         "@typescript-eslint/parser": "^5.12.1",
-=======
-        "@typescript-eslint/eslint-plugin": "^5.46.0",
->>>>>>> main
         "babel-loader": "^8.2.3",
         "babel-plugin-i18next-extract": "^0.8.3",
         "css-loader": "^6.6.0",
         "eslint": "^8.10.0",
         "eslint-config-airbnb": "^19.0.4",
-<<<<<<< HEAD
-=======
-        "eslint-plugin-i18n": "^2.1.0",
->>>>>>> main
         "eslint-plugin-i18next": "^5.1.2",
         "eslint-plugin-import": "^2.25.4",
         "eslint-plugin-jsx-a11y": "^6.5.1",
@@ -54,11 +46,7 @@
         "sass": "^1.49.9",
         "sass-loader": "^12.6.0",
         "style-loader": "^3.3.1",
-<<<<<<< HEAD
         "stylelint": "^14.5.3",
-=======
-        "stylelint": "^14.16.0",
->>>>>>> main
         "stylelint-config-standard-scss": "^3.0.0",
         "ts-loader": "^9.2.6",
         "ts-node": "^10.5.0",

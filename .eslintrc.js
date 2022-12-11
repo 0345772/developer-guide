@@ -4,7 +4,7 @@ module.exports = {
         es2021: true,
     },
     extends: [
-<<<<<<< HEAD
+
         "plugin:react/recommended",
         "airbnb",
         "plugin: i18next/recommended",
@@ -22,11 +22,7 @@ module.exports = {
         ecmaVersion: "latest",
         sourceType: "module",
     },
-<<<<<<< HEAD
     plugins: ["react", "@typescript-eslint", "i18next"],
-=======
-    plugins: ["react", "@typescript-eslint", "i18n"],
->>>>>>> main
     rules: {
         "react/jsx-indent": [2, 4],
         "react/jsx-indent-props": [2, 4],
@@ -46,11 +42,7 @@ module.exports = {
         "import/extensions": "off",
         "import/no-extraneous-dependencies": "off",
         "no-underscore-dangle": "off",
-<<<<<<< HEAD
         "i18next/no-literal-string": ["error", { markupOnly: true }],
-=======
-        "i18next/no-literal-string":['error', {markupOnly:true}],
->>>>>>> main
     },
     globals: {
         __IS_DEV__: true,
