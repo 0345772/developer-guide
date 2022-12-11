@@ -3,6 +3,7 @@
     "i18n-easy.localesPaths": ["public/locales", "src/shared/config/i18n"],
     "i18n-ally.localesPaths": ["public/locales", "src/shared/config/i18n"],
     "eslint.alwaysShowStatus": true,
+<<<<<<< HEAD
     "eslint.debug": true,
     "eslint.format.enable": true,
     "prettier-eslint-typescript.eslintConfig": {},
@@ -11,4 +12,16 @@
     "eslint.lintTask.options": ".",
     "eslint.options": {},
     "eslint.lintTask.enable": true
+=======
+    "eslint.run": "onType",
+    "eslint.debug": true,
+    "auto-close-tag.SublimeText3Mode": true,
+    "eslint.codeActionsOnSave.rules": null,
+    "eslint.onIgnoredFiles": "warn",
+    "css.validate": false,
+    "less.validate": false,
+    "scss.validate": false,
+    "stylelint.enable": true,
+    "stylelint.validate": ["css", "scss"]
+>>>>>>> main
 }

@@ -1,3 +1,8 @@
+<<<<<<< HEAD
+=======
+import { AboutPage } from 'pages/AboutPage';
+import { MainPage } from 'pages/MainPage';
+>>>>>>> main
 import { Suspense } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import { RouteConfig } from 'shared/config/routeConfig/routeConfig';

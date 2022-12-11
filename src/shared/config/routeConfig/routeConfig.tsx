@@ -1,6 +1,12 @@
+<<<<<<< HEAD
 import { RouteProps } from 'react-router-dom';
 import { MainPage } from 'pages/MainPage';
 import { AboutPage } from 'pages/AboutPage';
+=======
+import { AboutPage } from 'pages/AboutPage';
+import { MainPage } from 'pages/MainPage';
+import { RouteProps } from 'react-router-dom';
+>>>>>>> main
 
 export enum AppRoutes {
     MAIN = 'main',

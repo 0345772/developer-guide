@@ -14,7 +14,11 @@ export function buildLoaders({ isDev }: BuildOptions): webpack.RuleSetRule[] {
         use: {
             loader: 'babel-loader',
             options: {
+<<<<<<< HEAD
                 presets: ['@babel/preset-env'],
+=======
+                presets: [['@babel/preset-env']],
+>>>>>>> main
                 plugins: [
                     [
                         'i18next-extract',
@@ -63,5 +67,9 @@ export function buildLoaders({ isDev }: BuildOptions): webpack.RuleSetRule[] {
         ],
     };
 
+<<<<<<< HEAD
     return [fileLoader, svgLoader, babelLoader, typescriptLoader, cssLoader];
+=======
+    return [cssLoader, svgLoader, babelLoader, typescriptLoader, fileLoader];
+>>>>>>> main
 }
