@@ -10,5 +10,6 @@
     "eslint.workingDirectories": ["**/*.{ts,tsx}"],
     "eslint.lintTask.options": ".",
     "eslint.options": {},
-    "eslint.lintTask.enable": true
+    "eslint.lintTask.enable": true,
+    "i18n-ally.keystyle": "nested"
 }
