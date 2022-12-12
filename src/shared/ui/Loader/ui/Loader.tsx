@@ -1,19 +1,15 @@
-import { useTranslation } from 'react-i18next';
 import { classNames } from 'shared/lib/classNames/classNames';
-import cls from './Loader.module.scss';
+import './Loader.scss';
 
 interface LoaderProps {
     className?: string;
 }
 
-const Loader = ({ className }: LoaderProps) => {
-    const { t, i18n } = useTranslation();
-
-    return (
-        <div className={classNames(cls.Loader, {}, [className])}>
-            {t('лоадер')}
-        </div>
-    );
-};
-
-export default Loader;
+export const Loader = ({ className }: LoaderProps) => (
+    <div className={classNames('lds-ellipsis', {}, [className])}>
+        <div />
+        <div />
+        <div />
+        <div />
+    </div>
+);

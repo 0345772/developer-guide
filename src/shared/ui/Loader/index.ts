@@ -1,1 +1,1 @@
-export { LoaderAsync as Loader } from './ui/Loader.async';
+export { Loader } from './ui/Loader';
