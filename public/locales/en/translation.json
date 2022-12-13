@@ -8,5 +8,6 @@
   "Переключить": "Toggle",
   "loader": "Loader...",
   "Страница не найдена": "Page not found",
-  "Загрузка": "Loading"
+  "Загрузка": "Loading",
+  "Бросить ошибку": "Throw error"
 }
