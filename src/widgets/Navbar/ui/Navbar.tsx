@@ -1,6 +1,7 @@
+import { Theme } from 'app/providers/ThemeProvider';
 import { useTranslation } from 'react-i18next';
 import { classNames } from 'shared/lib/classNames/classNames';
-import { AppLink } from 'shared/ui/AppLink/AppLink';
+import { Button, ButtonTheme } from 'shared/ui/Button/Button';
 import cls from './Navbar.module.scss';
 
 interface NavbarProps {
@@ -9,21 +10,11 @@ interface NavbarProps {
 
 export const Navbar = ({ className }: NavbarProps) => {
     const { t, i18n } = useTranslation();
-    const about = '/about';
     return (
         <div className={classNames(cls.Navbar, {}, [className])}>
-            <div className={cls.links}>
-                <AppLink to="/" className={cls.mainLink}>
-                    {t('Главная')}
-                </AppLink>
-                <AppLink to={about} className={cls.aboutLink}>
-                    {t('О сайте')}
-                </AppLink>
-            </div>
+            <h4 className="psevdo">
+                {t('псевдо')}
+            </h4>
         </div>
     );
 };
-
-function useTheme(): { theme: any; toggleTheme: any } {
-    throw new Error('Function not implemented.');
-}
