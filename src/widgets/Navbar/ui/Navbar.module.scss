@@ -3,7 +3,15 @@
     height: var(--navbar-height);
     background: var(--inverted-bg-color);
     display: flex;
-    justify-content: end;
+    justify-content: space-between;
     align-items: center;
     padding: 20px;
+}
+
+.psevdo {
+    color: red;
+    border: none;
+    background: inherit;
+    font-weight: 900;
+    text-decoration: underline;
 }
