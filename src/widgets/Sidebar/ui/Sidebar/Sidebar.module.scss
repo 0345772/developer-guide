@@ -16,6 +16,7 @@
 
 .lang {
     margin-left: 20px;
+    color: var(--inverted-primary-color);
 }
 
 .collapseBtn {
@@ -41,10 +42,11 @@
 .link {
     margin-left: 15px;
     opacity: 1;
+    color: var(--inverted-primary-color);
 }
 
 .icon {
-    fill: var(--primary-color);
+    fill: var(--inverted-primary-color);
 }
 
 .collapsed {
