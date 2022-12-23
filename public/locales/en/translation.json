@@ -16,5 +16,8 @@
   "Привет, мой друг!": "Hello, my frend!",
   "отнять": "decrement",
   "прибавить": "increment",
-  "Значение": "value"
+  "Значение": "value",
+  "Введите текст": "Enter text",
+  "Введите имя пользователя": "Enter username",
+  "Введите пароль": "Enter password"
 }
