@@ -19,5 +19,11 @@
   "Значение": "value",
   "Введите текст": "Enter text",
   "Введите имя пользователя": "Enter username",
-  "Введите пароль": "Enter password"
+  "Введите пароль": "Enter password",
+  "Форма авторизации": "Autorization form",
+  "Вы ввели не верный логин или имя пользователя": "You enter uncorrected password or username",
+  "Выйти": "log out",
+  "Вы ввели не верный логин или пароль": "Uncorrected login or password",
+  "Введён неверный логин или пароль": "Uncorrected login or password",
+  "Введите username": "Enter username"
 }
