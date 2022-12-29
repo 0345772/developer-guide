@@ -81,6 +81,13 @@
     }
   ],
   "profile": {
-    "name": "typicode"
+    "first": "Vasiliy",
+    "lastname": "Stepovoy",
+    "age": "57",
+    "currency": "GRN",
+    "country": "Ukraine",
+    "city": "Kyiv",
+    "username": "admin",
+    "avatar": "../src/shared/assets/30433911.jpg"
   }
 }
