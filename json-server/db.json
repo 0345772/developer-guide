@@ -1,93 +1,38 @@
 {
-  "posts": [
-    {
-      "id": "1",
-      "title": "json-server",
-      "userId": "1"
-    },
-    {
-      "id": "2",
-      "title": "json-server",
-      "userId": "2"
-    },
-    {
-      "username-120": "admin",
-      "password": "123",
-      "id": "3"
-    },
-    {
-      "username-120": "admin",
-      "password": "123",
-      "id": "4"
-    },
-    {
-      "username": "admin",
-      "password": "123",
-      "id": "5"
-    },
-    {
-      "username": "admin1",
-      "password": "1234",
-      "id": "6"
-    },
-    {
-      "username": "admin",
-      "password": "1234",
-      "id": "7"
-    },
-    {
-      "username": "admin1",
-      "password": "1234",
-      "id": "8"
-    },
-    {
-      "username": "admin1",
-      "password": "1234",
-      "id": "9"
-    },
-    {
-      "username": "admin",
-      "password": "123",
-      "id": "10"
-    },
-    {
-      "username": "admin123",
-      "password": "123",
-      "id": "11"
-    },
-    {
-      "username": "admin1",
-      "password": "123",
-      "id": "12"
-    },
-    {
-      "username": "admin1",
-      "password": "1234",
-      "id": "13"
+    "posts": [
+        {
+            "id": "1",
+            "title": "json-server",
+            "userId": "1"
+        },
+        {
+            "id": "2",
+            "title": "json-server",
+            "userId": "2"
+        }
+    ],
+    "comments": [
+        {
+            "id": "1",
+            "body": "some comment",
+            "postId": "1"
+        }
+    ],
+    "users": [
+        {
+            "id": "1",
+            "username": "admin",
+            "password": "123"
+        }
+    ],
+    "profile": {
+        "first": "Vasiliy",
+        "lastname": "Stepovoy",
+        "age": 57,
+        "currency": "GRH",
+        "country": "Ukraine",
+        "city": "Kyiv",
+        "username": "admin",
+        "avatar": "https://cdn.pixabay.com/photo/2018/02/25/11/32/tarantino-3180248_960_720.jpg"
     }
-  ],
-  "comments": [
-    {
-      "id": "1",
-      "body": "some comment",
-      "postId": "1"
-    }
-  ],
-  "users": [
-    {
-      "id": "1",
-      "username": "admin",
-      "password": "123"
-    }
-  ],
-  "profile": {
-    "first": "Vasiliy",
-    "lastname": "Stepovoy",
-    "age": "57",
-    "currency": "GRN",
-    "country": "Ukraine",
-    "city": "Kyiv",
-    "username": "admin",
-    "avatar": "../src/shared/assets/30433911.jpg"
-  }
 }
