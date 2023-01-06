@@ -28,5 +28,14 @@
   "Введите username": "Enter username",
   "Страница профиля": "PROFILE PAGE",
   "Профиль": "Profile",
-  "Редактировать": "edit"
+  "Редактировать": "edit",
+  "Произошла ошибка при загрузке профиля": "An error occurred while loading the profile",
+  "Попробуйте обновить страницу": "Try refreshing the page",
+  "Сохранить": "Save",
+  "Отменить": "Cancel",
+  "Ваше имя": "You name",
+  "Ваша фамилия": "You lastname",
+  "Ваш возраст": "Your age",
+  "Город": "City",
+  "Введите ссылку на аватар": "Enter path on Avatar"
 }

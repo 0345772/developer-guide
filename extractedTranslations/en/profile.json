@@ -1,6 +1,15 @@
 {
+  "Ваш возраст": "Your age",
   "Ваша фамилия": "Lastname",
   "Ваше имя": "Username",
+  "Введите имя пользователя": "Enter username",
+  "Введите ссылку на аватар": "Enter path on Avatar",
+  "Город": "City",
+  "Отменить": "Cancel",
+  "Попробуйте обновить страницу": "Try refreshing the page",
+  "Произошла ошибка при загрузке": "An error occurred while loading",
+  "Произошла ошибка при загрузке профиля": "An error occurred while loading the profile",
   "Профиль": "Profile",
-  "Редактировать": "Edit"
+  "Редактировать": "Edit",
+  "Сохранить": "Save"
 }
