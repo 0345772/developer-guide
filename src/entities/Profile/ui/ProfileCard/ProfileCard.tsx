@@ -99,9 +99,6 @@ export const ProfileCard = (props: ProfileCardProps) => {
                     onChange={onChangeAge}
                     readonly={readonly}
                     onKeyPress={(e) => {
-                        if (!/[0-9]/.test(e.key)) {
-                            e.preventDefault();
-                        }
                     }}
                 />
                 <Input
