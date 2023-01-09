@@ -55,3 +55,24 @@ RedDark.args = {
     theme: AppLinkTheme.RED,
 };
 RedDark.decorators = [ThemeDecorator(Theme.DARK)];
+
+export const PrimaryOrange = Template.bind({});
+PrimaryOrange.args = {
+    children: 'Text',
+    theme: AppLinkTheme.ORANGE,
+};
+PrimaryOrange.decorators = [ThemeDecorator(Theme.ORANGE)];
+
+export const SecondaryOrange = Template.bind({});
+SecondaryOrange.args = {
+    children: 'Text',
+    theme: AppLinkTheme.ORANGE,
+};
+SecondaryOrange.decorators = [ThemeDecorator(Theme.ORANGE)];
+
+export const RedOrange = Template.bind({});
+RedOrange.args = {
+    children: 'Text',
+    theme: AppLinkTheme.ORANGE,
+};
+RedOrange.decorators = [ThemeDecorator(Theme.ORANGE)];

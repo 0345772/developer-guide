@@ -55,3 +55,22 @@ onlyTextDark.args = {
     text: 'Description Description Description Description',
 };
 onlyTextDark.decorators = [ThemeDecorator(Theme.DARK)];
+
+export const PrimaryOrange = Template.bind({});
+PrimaryOrange.args = {
+    title: 'Title lorem ipsun',
+    text: 'Description Description Description Description',
+};
+PrimaryDark.decorators = [ThemeDecorator(Theme.ORANGE)];
+
+export const onlyTitleOrange = Template.bind({});
+onlyTitleOrange.args = {
+    title: 'Title lorem ipsun',
+};
+onlyTitleOrange.decorators = [ThemeDecorator(Theme.ORANGE)];
+
+export const onlyTextOrange = Template.bind({});
+onlyTextOrange.args = {
+    text: 'Description Description Description Description',
+};
+onlyTextOrange.decorators = [ThemeDecorator(Theme.ORANGE)];

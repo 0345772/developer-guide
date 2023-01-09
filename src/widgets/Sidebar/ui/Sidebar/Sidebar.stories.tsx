@@ -33,6 +33,15 @@ Dark.decorators = [
     }),
 ];
 
+export const Orange = Template.bind({});
+Orange.args = {};
+Orange.decorators = [
+    ThemeDecorator(Theme.ORANGE),
+    StoreDecorator({
+        user: { authData: {} },
+    }),
+];
+
 export const NoAuth = Template.bind({});
 NoAuth.args = {};
 NoAuth.decorators = [

@@ -26,3 +26,10 @@ Dark.args = {
     children: 'Привет, мой друг!',
 };
 Dark.decorators = [ThemeDecorator(Theme.DARK)];
+
+export const Orange = Template.bind({});
+Orange.args = {
+    isOpen: true,
+    children: 'Привет, мой друг!',
+};
+Orange.decorators = [ThemeDecorator(Theme.ORANGE)];
