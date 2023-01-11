@@ -11,5 +11,5 @@
     "eslint.lintTask.options": ".",
     "eslint.options": {},
     "eslint.lintTask.enable": true,
-    "i18n-ally.keystyle": "nested"
+    "i18n-ally.keystyle": "nested",
 }
