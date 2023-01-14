@@ -43,5 +43,7 @@
   "Данные не указаны": "NO_DATA",
   "Введите имя ползователя": "INCORRECT_USER_DATA",
   "Не корректное название страны": "INCORRECT_COUNTRY",
-  "Введите возвраст": "INCORRECT_AGE"
+  "Введите возвраст": "INCORRECT_AGE",
+  "Детали страницы": "ARTICLE DETAILS PAGE",
+  "Страница статей": "ARTICLES PAGE"
 }
