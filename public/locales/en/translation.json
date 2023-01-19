@@ -45,5 +45,16 @@
   "Не корректное название страны": "INCORRECT_COUNTRY",
   "Введите возвраст": "INCORRECT_AGE",
   "Детали страницы": "ARTICLE DETAILS PAGE",
-  "Страница статей": "ARTICLES PAGE"
+  "Страница статей": "ARTICLES PAGE",
+  "Текстовый блок статьи": "Article text block component",
+  "Кодовый блок статьи": "ArticleCodeBlockComponent",
+  "Имедж блок статьи": "ArticleImageBlockComponent",
+  "Статья не найдена": "Article is undefined",
+  "Произошла ошибка при загрузке статьи": {
+    "": {
+      "": {
+        "": "an error occurred while loading the article"
+      }
+    }
+  }
 }
