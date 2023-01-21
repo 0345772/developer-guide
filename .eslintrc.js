@@ -52,7 +52,7 @@ module.exports = {
             'error',
             {
                 ignoreComments: true,
-                code: 120,
+                code: 150,
             },
         ],
         'jsx-a11y/no-static-element-interactions': 'off',
