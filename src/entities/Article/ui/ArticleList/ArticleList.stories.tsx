@@ -1,27 +1,38 @@
 /* eslint-disable max-len */
-import { Article, ArticleList, ArticleView } from 'entities/Article';
-import { memo } from 'react';
-import { useTranslation } from 'react-i18next';
-import { classNames } from 'shared/lib/classNames/classNames';
-import cls from './ArticlesPage.module.scss';
+import React from 'react';
+import { ComponentMeta, ComponentStory } from '@storybook/react';
 
-interface ArticlesPageProps {
-    className?: string;
-}
+import { ArticleList } from './ArticleList';
+import { Article, ArticleView } from '../../model/types/article';
+
+export default {
+    title: 'entities/Article/ArticleList',
+    component: ArticleList,
+    argTypes: {
+        backgroundColor: { control: 'color' },
+    },
+} as ComponentMeta<typeof ArticleList>;
+
+const Template: ComponentStory<typeof ArticleList> = (args) => <ArticleList {...args} />;
 
 const article = {
     id: '1',
-    title: 'Javascript new My Project',
+    title: 'Javascript news asfasjf asfjkask f',
     subtitle: 'Что нового в JS за 2022 год?',
     img: 'https://teknotower.com/wp-content/uploads/2020/11/js.png',
     views: 1022,
-    createdAt: '01.01.2023',
+    createdAt: '01.01.2022',
     user: {
         id: '1',
         username: 'admin',
-        avatar: 'https://yt3.ggpht.com/ytc/AAUvwngFzM_Rf6MNwOnFcuphoj93k7VFjlIrj-kSMxbh=s900-c-k-c0x00ffffff-no-rj',
+        avatar: 'https://xakep.ru/wp-content/uploads/2018/05/171485/KuroiSH-hacker.jpg',
     },
-    type: ['IT', 'SCIENCE', 'POLITICS', 'ECONOMICS'],
+    type: [
+        'IT',
+        'SCIENCE',
+        'POLITICS',
+        'ECONOMICS',
+    ],
     blocks: [
         {
             id: '1',
@@ -84,22 +95,40 @@ const article = {
     ],
 } as Article;
 
-const ArticlesPage = memo((props: ArticlesPageProps) => {
-    const { className } = props;
-    const { t } = useTranslation('article');
+export const LoadingBig = Template.bind({});
+LoadingBig.args = {
+    articles: [],
+    isLoading: true,
+    view: ArticleView.BIG,
+};
 
-    return (
-        <div className={classNames(cls.ArticlesPage, {}, [className])}>
-            <ArticleList
-                isLoading
-                view={ArticleView.BIG}
-                articles={new Array(16).fill(0).map((item, index) => ({
-                    ...article,
-                    id: String(index),
-                }))}
-            />
-        </div>
-    );
-});
+export const LoadingSmall = Template.bind({});
+LoadingSmall.args = {
+    articles: [],
+    isLoading: true,
+    view: ArticleView.SMALL,
+};
 
-export default ArticlesPage;
+export const ListSmall = Template.bind({});
+ListSmall.args = {
+    articles: new Array(9)
+        .fill(0)
+        .map((item, index) => ({
+            ...article,
+            id: String(index),
+        })),
+    isLoading: false,
+    view: ArticleView.SMALL,
+};
+
+export const ListBig = Template.bind({});
+ListBig.args = {
+    articles: new Array(9)
+        .fill(0)
+        .map((item, index) => ({
+            ...article,
+            id: String(index),
+        })),
+    isLoading: false,
+    view: ArticleView.BIG,
+};
