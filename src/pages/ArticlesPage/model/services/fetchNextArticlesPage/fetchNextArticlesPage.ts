@@ -6,7 +6,7 @@ import {
     getArticlesPageNum,
 } from '../../selectors/articlesPageSelectors';
 import { fetchArticlesList } from '../fetchArticlesList/fetchArticlesList';
-import { articlesPageActions } from '../../slice/articlesPageSlice';
+import { articlesPageActions } from '../../slices/articlesPageSlice';
 
 export const fetchNextArticlesPage = createAsyncThunk<
     void,

@@ -730,9 +730,9 @@
     {
       "id": "2",
       "first": "Step",
-      "lastname": "_65",
+      "lastname": "step_65",
       "age": 35,
-      "currency": "EU",
+      "currency": "EUR",
       "country": "Italy",
       "city": "Rim",
       "username": "user",
