@@ -697,6 +697,12 @@
       "userId": "2",
       "text": "I like PHP!",
       "id": "YQWTj64"
+    },
+    {
+      "articleId": "23",
+      "userId": "1",
+      "text": "Очень даже не плохая статья.",
+      "id": "yKhVTig"
     }
   ],
   "users": [
