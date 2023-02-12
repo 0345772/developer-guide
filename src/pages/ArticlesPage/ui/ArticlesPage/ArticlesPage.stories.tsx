@@ -1,28 +1,28 @@
-// import React from 'react';
-// import { ComponentMeta, ComponentStory } from '@storybook/react';
-// import { ThemeDecorator } from 'shared/config/storybook/ThemeDecorator/ThemeDecorator';
-// import { Theme } from 'app/providers/ThemeProvider';
-// import ArticlesPage from './ArticlesPage';
+import React from 'react';
+import { ComponentMeta, ComponentStory } from '@storybook/react';
+import { ThemeDecorator } from 'shared/config/storybook/ThemeDecorator/ThemeDecorator';
+import { Theme } from 'app/providers/ThemeProvider';
+import ArticlesPage from './ArticlesPage';
 
-// export default {
-//     title: 'pages/ui/ArciclesPage',
-//     component: ArticlesPage,
-//     argTypes: {
-//         backgroundColor: { control: 'color' },
-//     },
-// } as ComponentMeta<typeof ArticlesPage>;
+export default {
+    title: 'pages/Article/ArciclesPage',
+    component: ArticlesPage,
+    argTypes: {
+        backgroundColor: { control: 'color' },
+    },
+} as ComponentMeta<typeof ArticlesPage>;
 
-// const Template: ComponentStory<typeof ArticlesPage> = (args) => (
-//     <ArticlesPage {...args} />
-// );
+const Template: ComponentStory<typeof ArticlesPage> = (args) => (
+    <ArticlesPage {...args} />
+);
 
-// export const Normal = Template.bind({});
-// Normal.args = {};
+export const Normal = Template.bind({});
+Normal.args = {};
 
-// export const Dark = Template.bind({});
-// Dark.args = {};
-// Dark.decorators = [ThemeDecorator(Theme.DARK)];
+export const Dark = Template.bind({});
+Dark.args = {};
+Dark.decorators = [ThemeDecorator(Theme.DARK)];
 
-// export const Orange = Template.bind({});
-// Orange.args = {};
-// Orange.decorators = [ThemeDecorator(Theme.ORANGE)];
+export const Orange = Template.bind({});
+Orange.args = {};
+Orange.decorators = [ThemeDecorator(Theme.ORANGE)];
