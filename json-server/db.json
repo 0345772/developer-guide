@@ -745,6 +745,18 @@
       "userId": "1",
       "text": "Очень интересрые разработки.",
       "id": "M5oDfnj"
+    },
+    {
+      "articleId": "3",
+      "userId": "2",
+      "text": "Comment in Java.",
+      "id": "0KU3SmE"
+    },
+    {
+      "articleId": "10",
+      "userId": "1",
+      "text": "Hello, my frend!",
+      "id": "iwDCj1R"
     }
   ],
   "users": [
@@ -779,7 +791,7 @@
       "id": "2",
       "first": "Step",
       "lastname": "step_65",
-      "age": 35,
+      "age": 45,
       "currency": "EUR",
       "country": "Italy",
       "city": "Rim",

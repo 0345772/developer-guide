@@ -8,10 +8,15 @@
     padding: 20px;
 }
 
-.psevdo {
-    color: red;
-    border: none;
-    background: inherit;
-    font-weight: 900;
-    text-decoration: underline;
+.links {
+    margin-left: auto;
+}
+
+.mainLink {
+    margin-right: 15px;
+}
+
+.appName {
+    width: var(--sidebar-width);
+    margin-left: 15px;
 }
