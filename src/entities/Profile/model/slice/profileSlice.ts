@@ -71,3 +71,5 @@ export const profileSlice = createSlice({
 // Action creators are generated for each case reducer function
 export const { actions: profileActions } = profileSlice;
 export const { reducer: profileReducer } = profileSlice;
+
+export { updateProfileData };
