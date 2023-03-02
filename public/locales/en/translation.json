@@ -82,5 +82,8 @@
   "Редактирование статьи с ID": "Edit article with ID: ",
   "Создание новой статьи": "Create new article",
   "Степ_65_Приложение": "Step_65_Application",
-  "Создать статью": "Create article"
+  "Создать статью": "Create article",
+  "Выбрать значение": "Select value",
+  "укажите валюту": "Specify the currency",
+  "Укажите страну": "Specify the country"
 }
