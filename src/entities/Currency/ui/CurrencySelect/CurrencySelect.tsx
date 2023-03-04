@@ -38,7 +38,7 @@ export const CurrencySelect = memo(({
             onChange={onChangeHandler}
             readonly={readonly}
             // eslint-disable-next-line i18next/no-literal-string
-            direction="top"
+            direction="top right"
         />
 
     );

@@ -39,7 +39,7 @@ export const CountrySelect = memo(({
             items={options}
             readonly={readonly}
             // eslint-disable-next-line i18next/no-literal-string
-            direction="top"
+            direction="top right"
         />
     );
 });
