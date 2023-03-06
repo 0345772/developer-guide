@@ -2,18 +2,18 @@ import React from 'react';
 import { ComponentMeta, ComponentStory } from '@storybook/react';
 import { ThemeDecorator } from 'shared/config/storybook/ThemeDecorator/ThemeDecorator';
 import { Theme } from 'app/providers/ThemeProvider';
-import ArticlesPage from './ArticlesPage';
+import { ArticleDetailsComments } from './ArticleDetailsComments';
 
 export default {
-    title: 'pages/ArciclesPage/ArticlesPage',
-    component: ArticlesPage,
+    title: 'pages/ArticleDetailsPage/ArticleDetailsComments',
+    component: ArticleDetailsComments,
     argTypes: {
         backgroundColor: { control: 'color' },
     },
-} as ComponentMeta<typeof ArticlesPage>;
+} as ComponentMeta<typeof ArticleDetailsComments>;
 
-const Template: ComponentStory<typeof ArticlesPage> = (args) => (
-    <ArticlesPage {...args} />
+const Template: ComponentStory<typeof ArticleDetailsComments> = (args) => (
+    <ArticleDetailsComments {...args} />
 );
 
 export const Normal = Template.bind({});

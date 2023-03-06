@@ -86,5 +86,7 @@
   "Выбрать значение": "Select value",
   "укажите валюту": "Specify the currency",
   "Укажите страну": "Specify the country",
-  "Профиль пользователя": "Users profile"
+  "Профиль пользователя": "Users profile",
+  "Ошибка при загрузке статей": "Error loading articles",
+  "Ошибка при загрузке страниц": "Error loading articles"
 }
