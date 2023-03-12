@@ -72,9 +72,9 @@ export const ProfileCard = (props: ProfileCardProps) => {
     };
 
     return (
-        <VStack gap="16" max className={classNames(cls.ProfileCard, mods, [className])}>
+        <VStack gap="8" max className={classNames(cls.ProfileCard, mods, [className])}>
             {data?.avatar && (
-                <HStack justify="center" max>
+                <HStack justify="center" max className={cls.avatarWrapper}>
                     <Avatar src={data?.avatar} />
                 </HStack>
             )}
@@ -84,6 +84,7 @@ export const ProfileCard = (props: ProfileCardProps) => {
                 className={cls.input}
                 onChange={onChangeFirstname}
                 readOnly={readonly}
+                data-testid="ProfileCard.firstname"
             />
             <Input
                 value={data?.lastname}
@@ -91,6 +92,7 @@ export const ProfileCard = (props: ProfileCardProps) => {
                 className={cls.input}
                 onChange={onChangeLastname}
                 readonly={readonly}
+                data-testid="ProfileCard.lastname"
             />
             <Input
                 value={data?.age}
@@ -98,8 +100,8 @@ export const ProfileCard = (props: ProfileCardProps) => {
                 className={cls.input}
                 onChange={onChangeAge}
                 readonly={readonly}
-                onKeyPress={(e) => {
-                }}
+                // onKeyPress={(e) => {
+                // }}
             />
             <Input
                 value={data?.city}

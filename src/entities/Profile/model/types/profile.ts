@@ -1,4 +1,3 @@
-import { RejectedWithValueActionFromAsyncThunk } from '@reduxjs/toolkit/dist/matchers';
 import { Country } from 'entities/Country/model/types/country';
 import { Currency } from 'entities/Currency/model/types/currency';
 

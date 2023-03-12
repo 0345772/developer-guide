@@ -16,14 +16,14 @@ export const ArticleRecommendationsList = memo(
         const { t } = useTranslation();
         const { data: articles, isLoading, error } = useArticleRecommendationsList(3);
 
-        if (isLoading || error) {
+        if (isLoading || error || !articles) {
             return null;
         }
 
         return (
             <VStack gap="8" className={classNames('', {}, [className])}>
                 <Text size={TextSize.L} title={t('Рекомендуем')} />
-                <ArticleList articles={articles} target="_blank" />
+                <ArticleList articles={articles} target="_blank" virtualized={false} />
             </VStack>
         );
     },
