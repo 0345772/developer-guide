@@ -88,5 +88,8 @@
   "Укажите страну": "Specify the country",
   "Профиль пользователя": "Users profile",
   "Ошибка при загрузке статей": "Error loading articles",
-  "Ошибка при загрузке страниц": "Error loading articles"
+  "Ошибка при загрузке страниц": "Error loading articles",
+  "Админ Панель": "Admin Panel",
+  "Админка": "Admin Panel",
+  "У вас нет доступа к этой странице": "You do not have access to this page"
 }
