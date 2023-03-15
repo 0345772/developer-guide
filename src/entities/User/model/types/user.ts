@@ -1,10 +1,5 @@
 import { Settings } from 'http2';
-
-export enum UserRole {
-  ADMIN = 'ADMIN',
-  USER = 'USER',
-  MANAGER = 'MANAGER'
-}
+import { UserRole } from '../consts/userConsts';
 
 export interface User {
   id: string;
@@ -17,3 +12,5 @@ export interface UserSchema {
   authData?: User;
   _inited: boolean;
 }
+
+export { UserRole };

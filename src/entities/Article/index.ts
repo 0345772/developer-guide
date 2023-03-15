@@ -2,14 +2,11 @@ export {
     ArticleDetails,
 } from './ui/ArticleDetails/ArticleDetails';
 
-export {
+export type {
     Article,
-    ArticleView,
-    ArticleSortField,
-    ArticleType,
 } from './model/types/article';
 
-export { ArticleDetailsSchema } from './model/types/articleDetailsSchema';
+export type { ArticleDetailsSchema } from './model/types/articleDetailsSchema';
 
 export { ArticleList } from './ui/ArticleList/ArticleList';
 
@@ -20,3 +17,9 @@ export { ArticleSortSelector } from './ui/ArticleSortSelector/ArticleSortSelecto
 export { ArticleTypeTabs } from './ui/ArticleTypeTabs/ArticleTypeTabs';
 
 export { getArticleDetailsData } from './model/selectors/articleDetails';
+
+export {
+    ArticleView,
+    ArticleSortField,
+    ArticleType,
+} from './model/consts/articleConsts';
