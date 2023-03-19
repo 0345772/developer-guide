@@ -3,14 +3,13 @@
     height: var(--navbar-height);
     background: var(--inverted-bg-color);
     display: flex;
-    justify-content: space-between;
     align-items: center;
     padding: 20px;
 }
 
 .links,
-.dropdown {
-    margin-left: auto;
+.actions {
+    justify-content: flex-end;
 }
 
 .mainLink {
@@ -20,4 +19,9 @@
 .appName {
     width: var(--sidebar-width);
     margin-left: 15px;
+}
+
+.createBtn {
+    margin-left: 30px;
+    white-space: nowrap;
 }
