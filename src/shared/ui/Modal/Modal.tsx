@@ -3,6 +3,7 @@ import React, {
     ReactNode, useEffect, useRef, useState, useCallback, MutableRefObject,
 } from 'react';
 import { classNames, Mods } from 'shared/lib/classNames/classNames';
+import { useModal } from 'shared/lib/hooks/useModal/useModal';
 import { Overlay } from '../Overlay/Overlay';
 import { Portal } from '../Portal/Portal';
 import cls from './Modal.module.scss';
@@ -22,40 +23,16 @@ export const Modal = (props: ModalProps) => {
         className, children, isOpen, onClose, lazy,
     } = props;
 
-    const [isClosing, setIsClosing] = useState(false);
-    const [isMounted, setIsMounted] = useState(false);
-    const timerRef = useRef() as MutableRefObject<ReturnType<typeof setTimeout>>;
-    const { theme } = useTheme();
-
-    useEffect(() => {
-        if (isOpen) {
-            setIsMounted(true);
-        }
-    }, [isOpen]);
-
-    const closeHandler = useCallback(() => {
-        if (onClose) {
-            setIsClosing(true);
-            timerRef.current = setTimeout(() => {
-                onClose();
-                setIsClosing(false);
-            }, ANIMATION_DELAY);
-        }
-    }, [onClose]);
-
-    const onkeydown = useCallback((e: KeyboardEvent) => {
-        if (e.key === 'Escape') {
-            closeHandler();
-        }
-    }, [closeHandler]);
-
-    useEffect(() => () => {
-        if (isOpen) {
-            window.addEventListener('keydown', onkeydown);
-        }
-        clearTimeout(timerRef.current);
-        window.removeEventListener('keydown', onkeydown);
-    }, [isOpen, onkeydown]);
+    const {
+        close,
+        isClosing,
+        isMounted,
+    } = useModal({
+        animationDelay: ANIMATION_DELAY,
+        isOpen,
+        onClose,
+    });
+    const theme = useTheme();
 
     const mods: Mods = {
         [cls.opened]: isOpen,
@@ -68,8 +45,8 @@ export const Modal = (props: ModalProps) => {
 
     return (
         <Portal>
-            <div className={classNames(cls.Modal, mods, [className, theme, 'app_modal'])}>
-                <Overlay onClick={closeHandler} />
+            <div className={classNames(cls.Modal, mods, [className, 'app_modal'])}>
+                <Overlay onClick={close} />
                 <div className={cls.content}>
                     {children}
                 </div>
