@@ -1,16 +1,17 @@
 import {
     MutableRefObject, useCallback, useEffect, useRef, useState,
 } from 'react';
+import { useTheme } from 'app/providers/ThemeProvider';
 
-interface useModalProps {
+interface UseModalProps {
   onClose?: () => void;
   isOpen?: boolean;
-  animationDelay?: number;
+  animationDelay: number;
 }
 
 export function useModal({
-    onClose, isOpen, animationDelay,
-}: useModalProps) {
+    animationDelay, isOpen, onClose,
+}: UseModalProps) {
     const [isClosing, setIsClosing] = useState(false);
     const [isMounted, setIsMounted] = useState(false);
     const timerRef = useRef() as MutableRefObject<ReturnType<typeof setTimeout>>;
@@ -31,7 +32,8 @@ export function useModal({
         }
     }, [animationDelay, onClose]);
 
-    const onkeydown = useCallback((e: KeyboardEvent) => {
+    // Новые ссылки!!!
+    const onKeyDown = useCallback((e: KeyboardEvent) => {
         if (e.key === 'Escape') {
             close();
         }
@@ -39,13 +41,14 @@ export function useModal({
 
     useEffect(() => {
         if (isOpen) {
-            window.addEventListener('keydown', onkeydown);
+            window.addEventListener('keydown', onKeyDown);
         }
+
         return () => {
             clearTimeout(timerRef.current);
-            window.removeEventListener('keydown', onkeydown);
+            window.removeEventListener('keydown', onKeyDown);
         };
-    }, [isOpen, onkeydown]);
+    }, [isOpen, onKeyDown]);
 
     return {
         isClosing,
