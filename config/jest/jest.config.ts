@@ -32,12 +32,16 @@ export default {
             {
                 publicPath: '<rootDir>/reports/unit',
                 filename: 'report.html',
-                openReport: false,
+                // openReport: true,
                 inlineSource: true,
             },
         ],
     ],
-
+    resolve: {
+        alias: [
+            { find: '@', replacement: '/src' },
+        ],
+    },
     // Indicates whether the coverage information should be collected while executing the test
     // collectCoverage: false,
 
