@@ -9,14 +9,14 @@ import { StateSchema, StoreProvider } from '@/app/providers/StoreProvider';
 export interface componentRenderOptions {
     route?: string;
     initialState?: DeepPartial<StateSchema>;
-    asyncReducers?: DeepPartial<ReducersMapObject<StateSchema>>
+    asyncReducers?: DeepPartial<ReducersMapObject<StateSchema>>;
 }
 
-export function componentRender(component: ReactNode, options: componentRenderOptions = {}) {
-    const {
-        route = '/', initialState,
-        asyncReducers,
-    } = options;
+export function componentRender(
+    component: ReactNode,
+    options: componentRenderOptions = {},
+) {
+    const { route = '/', initialState, asyncReducers } = options;
 
     return render(
         <MemoryRouter initialEntries={[route]}>
@@ -27,7 +27,6 @@ export function componentRender(component: ReactNode, options: componentRenderOp
                 <I18nextProvider i18n={i18nForTests}>
                     {component}
                 </I18nextProvider>
-                ,
             </StoreProvider>
         </MemoryRouter>,
     );

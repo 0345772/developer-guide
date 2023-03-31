@@ -809,6 +809,12 @@
       "userId": "1",
       "text": "My favorites comment",
       "id": "W9aatgr"
+    },
+    {
+      "articleId": "58",
+      "userId": "2",
+      "text": "djfksla",
+      "id": "8s_BpZJ"
     }
   ],
   "users": [
@@ -846,7 +852,7 @@
       "first": "Vasiliy",
       "lastname": "Stepovoy",
       "age": 57,
-      "currency": "EUR",
+      "currency": "UAH",
       "country": "Austria",
       "city": "Kyiv",
       "username": "admin12345",
