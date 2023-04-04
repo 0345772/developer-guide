@@ -16,18 +16,17 @@ export type AppRoutesProps = RouteProps & {
 };
 
 export enum AppRoutes {
-  MAIN = 'main',
-  ABOUT = 'about',
-  PROFILE = 'profile',
-  ARTICLES = 'articles',
-  ARTICLE_DETAILS = 'article_details',
-  ARITCLE_CREATE = 'article_create',
-  ARTICLE_EDIT = 'article_edit',
-  ADMIN_PANEL = 'admin_panel',
-  FORBIDDEN = 'forbidden',
+    MAIN = 'main',
+    ABOUT = 'about',
+    PROFILE = 'profile',
+    ARTICLES = 'articles',
+    ARTICLE_DETAILS = 'article_details',
+    ARITCLE_CREATE = 'article_create',
+    ARTICLE_EDIT = 'article_edit',
+    ADMIN_PANEL = 'admin_panel',
+    FORBIDDEN = 'forbidden',
 
-  NOT_FOUND = 'not_found',
-
+    NOT_FOUND = 'not_found',
 }
 
 export const RoutePath: Record<AppRoutes, string> = {
@@ -56,7 +55,7 @@ export const RouteConfig: Record<AppRoutes, AppRoutesProps> = {
     },
     [AppRoutes.PROFILE]: {
         path: `${RoutePath.profile}:id`,
-        element: <ProfilePage />,
+        element: <ProfilePage profileId="" />,
         authOnly: true,
     },
     [AppRoutes.ARTICLES]: {
@@ -88,7 +87,6 @@ export const RouteConfig: Record<AppRoutes, AppRoutesProps> = {
     [AppRoutes.FORBIDDEN]: {
         path: `${RoutePath.forbidden}`,
         element: <ForbiddenPage />,
-
     },
     [AppRoutes.NOT_FOUND]: {
         path: RoutePath.not_found,
