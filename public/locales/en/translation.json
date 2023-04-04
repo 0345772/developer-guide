@@ -93,5 +93,14 @@
   "Админка": "Admin Panel",
   "У вас нет доступа к этой странице": "You do not have access to this page",
   "Ваш отзыв": "your feedback",
-  "Закрыть": "Close"
+  "Закрыть": "Close",
+  "Спасибо за оцетку!": "Thanks for the rating!",
+  "Оцените профиль": "Rate your profile",
+  "Оставьте свой отзыв о профиле": "Leave your feedback about the profile",
+  "Спасибо за оценку!": "Thank you for rating!",
+  "Некорректный возраст": "Incorrect age",
+  "Имя и фамилия обязательны": "First and last name are required",
+  "Некорректный регион": "Incorrect region",
+  "Серверная ошибка при сохранении": "Server error on save",
+  "Статьи": "Articles"
 }

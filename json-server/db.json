@@ -853,7 +853,7 @@
       "lastname": "Stepovoy",
       "age": 57,
       "currency": "UAH",
-      "country": "Austria",
+      "country": "Italy",
       "city": "Kyiv",
       "username": "admin12345",
       "avatar": "https://yt3.ggpht.com/ytc/AAUvwngFzM_Rf6MNwOnFcuphoj93k7VFjlIrj-kSMxbh=s900-c-k-c0x00ffffff-no-rj"
@@ -864,7 +864,7 @@
       "lastname": "step_65",
       "age": 45,
       "currency": "EUR",
-      "country": "Italy",
+      "country": "Austria",
       "city": "Rim",
       "username": "user",
       "avatar": "https://thypix.com/wp-content/uploads/2022/08/hacker-avatar-profile-picture-thypix-48.jpg"
@@ -879,6 +879,108 @@
       "city": "Neapol",
       "username": "manager",
       "avatar": "https://media.istockphoto.com/id/1075599562/uk/%D1%84%D0%BE%D1%82%D0%BE/%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D1%96%D1%81%D1%82-%D1%8F%D0%BA%D0%B8%D0%B9-%D0%BF%D1%80%D0%B0%D1%86%D1%8E%D1%94-%D0%B7-%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BD%D0%B8%D0%BC-%D0%BA%D0%BE%D0%B4%D0%BE%D0%BC.jpg?s=1024x1024&w=is&k=20&c=NoZe8aCSrH66Gyxq5oenvD1fqEIqcxmQKr5H1LAj6Es="
+    }
+  ],
+  "article-ratings": [
+    {
+      "id": "1",
+      "rate": "4",
+      "feedback": "Отличная статья",
+      "userId": "1",
+      "articleId": "1"
+    },
+    {
+      "id": "2",
+      "rate": "4",
+      "feedback": "Отличная статья",
+      "userId": "1",
+      "articleId": "2"
+    },
+    {
+      "id": "1",
+      "rate": "4",
+      "feedback": "Отличная статья",
+      "userId": "1",
+      "articleId": "3"
+    },
+    {
+      "userId": "1",
+      "articleId": "4",
+      "rate": 2,
+      "id": "H3Lnz0X"
+    },
+    {
+      "userId": "1",
+      "articleId": "10",
+      "rate": 2,
+      "id": "6tUDf0Q"
+    },
+    {
+      "userId": "1",
+      "articleId": "6",
+      "rate": 2,
+      "id": "kBhGZAC"
+    },
+    {
+      "userId": "1",
+      "articleId": "16",
+      "rate": 2,
+      "feedback": "Hello, Alibabaevich!",
+      "id": "8De1-YQ"
+    },
+    {
+      "userId": "1",
+      "articleId": "13",
+      "rate": 3,
+      "feedback": "",
+      "id": "wW76w1L"
+    }
+  ],
+  "profile-ratings": [
+    {
+      "id": "1",
+      "rate": "",
+      "feedback": "Хороший профиль",
+      "userId": "1",
+      "profileId": "1"
+    },
+    {
+      "id": "2",
+      "rate": "",
+      "feedback": "Отличный профиль",
+      "userId": "1",
+      "profileId": "2"
+    },
+    {
+      "id": "3",
+      "rate": "",
+      "feedback": "Отличная статья",
+      "userId": "1",
+      "profileId": "3"
+    },
+    {
+      "userId": "1",
+      "rate": 3,
+      "feedback": "Very good! Profile Ok!",
+      "id": "QI_yACL"
+    },
+    {
+      "userId": "1",
+      "rate": 3,
+      "feedback": "Very good! Profile Ok!",
+      "id": "pLICzKC"
+    },
+    {
+      "userId": "2",
+      "rate": 5,
+      "feedback": "",
+      "id": "eXKTVua"
+    },
+    {
+      "userId": "3",
+      "rate": 5,
+      "feedback": "Профессионал высокого уровня! Очень хороший человек.",
+      "id": "9wimApU"
     }
   ]
 }
