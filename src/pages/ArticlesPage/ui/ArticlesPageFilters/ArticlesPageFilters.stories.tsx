@@ -23,10 +23,8 @@ Normal.decorators = [StoreDecorator({})];
 
 export const Dark = Template.bind({});
 Dark.args = {};
-Dark.decorators = [ThemeDecorator(Theme.DARK)];
-Dark.decorators = [StoreDecorator({})];
+Dark.decorators = [StoreDecorator({}), ThemeDecorator(Theme.DARK)];
 
 export const Orange = Template.bind({});
 Orange.args = {};
-Orange.decorators = [ThemeDecorator(Theme.ORANGE)];
-Orange.decorators = [StoreDecorator({})];
+Orange.decorators = [StoreDecorator({}), ThemeDecorator(Theme.ORANGE)];

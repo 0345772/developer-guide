@@ -4,6 +4,7 @@ import { ThemeDecorator } from '@/shared/config/storybook/ThemeDecorator/ThemeDe
 import { Theme } from '@/app/providers/ThemeProvider';
 import { StoreDecorator } from '@/shared/config/storybook/StoreDecorator/StoreDecorator';
 import { ArticleTextBlockComponent } from './ArticleTextBlockComponent';
+import { ArticleBlockType } from '../../model/consts/articleConsts';
 
 export default {
     title: 'entities/Article/ArticleTextBlockComponent',

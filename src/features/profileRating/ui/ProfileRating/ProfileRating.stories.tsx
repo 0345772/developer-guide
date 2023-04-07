@@ -5,7 +5,7 @@ import { Theme } from '@/app/providers/ThemeProvider';
 import ProfileRating from './ProfileRating';
 
 export default {
-    title: 'ProfileRating',
+    title: 'features/profileRating/ProfileRating',
     component: ProfileRating,
     argTypes: {
         backgroundColor: { control: 'color' },
