@@ -934,6 +934,13 @@
       "rate": 3,
       "feedback": "",
       "id": "wW76w1L"
+    },
+    {
+      "userId": "3",
+      "articleId": "10",
+      "rate": 2,
+      "feedback": "Local ok!",
+      "id": "Ewkji0k"
     }
   ],
   "profile-ratings": [

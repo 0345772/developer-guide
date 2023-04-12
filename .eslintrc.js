@@ -80,7 +80,8 @@ module.exports = {
         'no-undef': 'off',
         'react/no-array-index-key': 'off',
         'arrow-body-style': 'off',
-        'step65-plugin/path-checker': ['error', {alias: '@'}],
+        'step65-plugin/path-checker': ['error', { alias: '@' }],
+        'step65-plugin/public-api-imports': ['error', { alias: '@' }],
     },
     globals: {
         __IS_DEV__: true,

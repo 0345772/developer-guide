@@ -1,10 +1,6 @@
-export {
-    ArticleDetails,
-} from './ui/ArticleDetails/ArticleDetails';
+export { ArticleDetails } from './ui/ArticleDetails/ArticleDetails';
 
-export type {
-    Article,
-} from './model/types/article';
+export type { Article } from './model/types/article';
 
 export type { ArticleDetailsSchema } from './model/types/articleDetailsSchema';
 
@@ -16,10 +12,22 @@ export { ArticleSortSelector } from './ui/ArticleSortSelector/ArticleSortSelecto
 
 export { ArticleTypeTabs } from './ui/ArticleTypeTabs/ArticleTypeTabs';
 
-export { getArticleDetailsData } from './model/selectors/articleDetails';
+export {
+    getArticleDetailsData,
+    getArticleDetailsError,
+    getArticleDetailsIsLoading,
+} from './model/selectors/articleDetails';
 
 export {
     ArticleView,
     ArticleSortField,
     ArticleType,
 } from './model/consts/articleConsts';
+
+export {
+    articleDetailsSlice,
+    articleDetailsActions,
+    articleDetailsReducer,
+} from './model/slice/articleDetailsSlice';
+
+export { ArticleBlockType } from './model/consts/articleConsts';
