@@ -3,5 +3,4 @@ export { AddCommentFormAsync as AddCommentForm } from './ui/AddCommentForm/AddCo
 export {
     addCommentFormSlice,
     addCommentFormActions,
-    addCommentFormReducer,
 } from './model/slice/addCommentFormSlice';

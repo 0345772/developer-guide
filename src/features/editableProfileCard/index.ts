@@ -3,6 +3,5 @@ export type { ProfileSchema } from './model/types/editableProfileCardSchema';
 export {
     profileSlice,
     profileActions,
-    profileReducer,
     updateProfileData,
 } from './model/slice/profileSlice';

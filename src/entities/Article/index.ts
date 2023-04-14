@@ -12,22 +12,16 @@ export { ArticleSortSelector } from './ui/ArticleSortSelector/ArticleSortSelecto
 
 export { ArticleTypeTabs } from './ui/ArticleTypeTabs/ArticleTypeTabs';
 
-export {
-    getArticleDetailsData,
-    getArticleDetailsError,
-    getArticleDetailsIsLoading,
-} from './model/selectors/articleDetails';
+export { getArticleDetailsData } from './model/selectors/articleDetails';
 
 export {
     ArticleView,
     ArticleSortField,
     ArticleType,
+    ArticleBlockType,
 } from './model/consts/articleConsts';
 
 export {
     articleDetailsSlice,
     articleDetailsActions,
-    articleDetailsReducer,
 } from './model/slice/articleDetailsSlice';
-
-export { ArticleBlockType } from './model/consts/articleConsts';
