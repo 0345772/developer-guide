@@ -1,4 +1,3 @@
-import { Settings } from 'http2';
 import { UserRole } from '../consts/userConsts';
 
 export interface User {

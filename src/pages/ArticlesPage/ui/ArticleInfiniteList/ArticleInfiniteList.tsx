@@ -6,7 +6,6 @@ import { classNames } from '@/shared/lib/classNames/classNames';
 import { Text } from '@/shared/ui/Text';
 import { getArticlesPageError, getArticlesPageIsLoading, getArticlesPageView } from '../../model/selectors/articlesPageSelectors';
 import { getArticles } from '../../model/slices/articlesPageSlice';
-import cls from './ArticleInfiniteList.module.scss';
 
 interface ArticleInfiniteListProps {
     className?: string;

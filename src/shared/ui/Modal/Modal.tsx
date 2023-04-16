@@ -1,5 +1,5 @@
 import React, {
-    ReactNode, useEffect, useRef, useState, useCallback, MutableRefObject,
+    ReactNode,
 } from 'react';
 import { classNames, Mods } from '@/shared/lib/classNames/classNames';
 import { useModal } from '@/shared/lib/hooks/useModal/useModal';

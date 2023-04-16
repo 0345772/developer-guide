@@ -23,6 +23,8 @@ module.exports = {
         "i18next",
         "react-hooks",
         "step65-plugin",
+        "unused-imports",
+        "eslint-plugin-import",
     ],
     rules: {
         "react/jsx-indent": [2, 4],
@@ -34,6 +36,8 @@ module.exports = {
                 extensions: [".js", ".jsx", ".tsx"],
             },
         ],
+        "eslint-plugin-import": [0],
+        "unused-imports/no-unused-imports": "error",
         "import/no-unresolved": "off",
         "import/prefer-default-export": "off",
         "no-unused-vars": "off",
@@ -86,10 +90,7 @@ module.exports = {
             "error",
             {
                 alias: "@",
-                ignoreImportPatterns: [
-                    "**/StoreProvider",
-                    "**/testing",
-                ],
+                ignoreImportPatterns: ["**/StoreProvider", "**/testing"],
             },
         ],
         "step65-plugin/public-api-imports": [

@@ -10,7 +10,6 @@ import { Text } from '@/shared/ui/Text';
 import { profileActions, updateProfileData } from '../../model/slice/profileSlice';
 import { getProfileReadonly } from '../../model/selectors/getProfileReadonly/getProfileReadonly';
 import { getProfileData } from '../../model/selectors/getProfileData/getProfileData';
-import cls from './EditableProfileCardHeader.module.scss';
 
 interface EditableProfileCardHeaderProps {
     className?: string;
