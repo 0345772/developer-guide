@@ -82,6 +82,16 @@ module.exports = {
         "react/no-array-index-key": "off",
         "arrow-body-style": "off",
         "step65-plugin/path-checker": ["error", { alias: "@" }],
+        "step65-plugin/layer-imports": [
+            "error",
+            {
+                alias: "@",
+                ignoreImportPatterns: [
+                    "**/StoreProvider",
+                    "**/testing",
+                ],
+            },
+        ],
         "step65-plugin/public-api-imports": [
             "error",
             {

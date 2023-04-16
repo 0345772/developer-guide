@@ -1,5 +1,3 @@
-import { isUserAdmin, isUserManager } from './model/selectors/roleSelectors';
-
 export { userReducer, userActions } from './model/slice/userSlice';
 
 export { isUserAdmin, isUserManager, getUserRoles } from './model/selectors/roleSelectors';
