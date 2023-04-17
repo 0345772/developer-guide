@@ -24,11 +24,11 @@ module.exports = {
         "react-hooks",
         "step65-plugin",
         "unused-imports",
-        "eslint-plugin-import",
     ],
     rules: {
         "react/jsx-indent": [2, 4],
         "react/jsx-indent-props": [2, 4],
+        "unused-imports/no-unused-imports": "error",
         indent: [2, 4],
         "react/jsx-filename-extension": [
             2,
@@ -36,8 +36,6 @@ module.exports = {
                 extensions: [".js", ".jsx", ".tsx"],
             },
         ],
-        "eslint-plugin-import": [0],
-        "unused-imports/no-unused-imports": "error",
         "import/no-unresolved": "off",
         "import/prefer-default-export": "off",
         "no-unused-vars": "off",
@@ -68,7 +66,6 @@ module.exports = {
                 ],
             },
         ],
-        "linebreak-style": "off",
         "max-len": [
             "error",
             {
@@ -76,7 +73,6 @@ module.exports = {
                 code: 220,
             },
         ],
-        cSpell: "off",
         "jsx-a11y/no-static-element-interactions": "off",
         "jsx-a11y/click-events-have-key-events": "off",
         "react-hooks/rules-of-hooks": "error",
@@ -104,6 +100,9 @@ module.exports = {
                 ],
             },
         ],
+        "linebreak-style": ["error", "unix"],
+        quotes: ["error", "single"],
+        semi: ["error", "always"],
     },
     globals: {
         __IS_DEV__: true,
@@ -112,7 +111,7 @@ module.exports = {
     },
     overrides: [
         {
-            files: ["**/src/**/*.{test, stories}.{ts,tsx}"],
+            files: ["**/src/**/*.{test,stories}.{ts,tsx}"],
             rules: {
                 "i18next/no-literal-string": "off",
                 "max-len": "off",

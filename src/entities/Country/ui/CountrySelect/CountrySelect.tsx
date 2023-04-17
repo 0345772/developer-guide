@@ -20,26 +20,31 @@ const options = [
     { value: Country.Austria, content: Country.Austria },
 ];
 
-export const CountrySelect = memo(({
-    className, value, onChange, readonly,
-}: CountrySelectProps) => {
-    const { t } = useTranslation();
+export const CountrySelect = memo(
+    ({
+        className, value, onChange, readonly,
+    }: CountrySelectProps) => {
+        const { t } = useTranslation();
 
-    const onChangeHandler = useCallback((value: string) => {
-        onChange?.(value as Country);
-    }, [onChange]);
+        const onChangeHandler = useCallback(
+            (value: string) => {
+                onChange?.(value as Country);
+            },
+            [onChange],
+        );
 
-    return (
-        <ListBox
-            className={className}
-            defaultValue={t('Укажите страну')}
-            value={value}
-            onChange={onChangeHandler}
-            label={t('Укажите страну')}
-            items={options}
-            readonly={readonly}
-            // eslint-disable-next-line i18next/no-literal-string
-            direction="top right"
-        />
-    );
-});
+        return (
+            <ListBox
+                className={className}
+                defaultValue={t('Укажите страну')}
+                value={value}
+                onChange={onChangeHandler}
+                label={t('Укажите страну')}
+                items={options}
+                readonly={readonly}
+                // eslint-disable-next-line i18next/no-literal-string
+                direction="top right"
+            />
+        );
+    },
+);
