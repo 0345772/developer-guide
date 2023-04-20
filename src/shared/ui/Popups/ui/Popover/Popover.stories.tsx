@@ -3,6 +3,7 @@ import { ComponentMeta, ComponentStory } from '@storybook/react';
 import { ThemeDecorator } from '@/shared/config/storybook/ThemeDecorator/ThemeDecorator';
 import { Popover } from './Popover';
 import { Theme } from '@/shared/const/theme';
+import { StoreDecorator } from '@/shared/config/storybook/StoreDecorator/StoreDecorator';
 
 export default {
     title: 'shared/Popups/Popover',
@@ -10,6 +11,7 @@ export default {
     argTypes: {
         backgroundColor: { control: 'color' },
     },
+    decorators: [StoreDecorator({})],
 } as ComponentMeta<typeof Popover>;
 
 const Template: ComponentStory<typeof Popover> = (args) => (
@@ -17,12 +19,19 @@ const Template: ComponentStory<typeof Popover> = (args) => (
 );
 
 export const Normal = Template.bind({});
-Normal.args = {};
+Normal.args = {
+    trigger: 'It is trigger!',
+};
+Normal.decorators = [StoreDecorator({})];
 
 export const Dark = Template.bind({});
-Dark.args = {};
-Dark.decorators = [ThemeDecorator(Theme.DARK)];
+Dark.args = {
+    trigger: 'It is trigger!',
+};
+Dark.decorators = [ThemeDecorator(Theme.DARK), StoreDecorator({})];
 
 export const Orange = Template.bind({});
-Orange.args = {};
-Orange.decorators = [ThemeDecorator(Theme.ORANGE)];
+Orange.args = {
+    trigger: 'It is trigger!',
+};
+Orange.decorators = [ThemeDecorator(Theme.ORANGE), StoreDecorator({})];

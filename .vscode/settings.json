@@ -12,5 +12,6 @@
     "eslint.options": {},
     "eslint.lintTask.enable": true,
     "i18n-ally.keystyle": "nested",
-    "cSpell.words": ["сервер"]
+    "cSpell.words": false,
+    "cSpell.enabled": false,
 }
