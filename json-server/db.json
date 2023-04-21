@@ -948,6 +948,12 @@
       "rate": 2,
       "feedback": "this paty is norm.",
       "id": "3tqEKa_"
+    },
+    {
+      "userId": "2",
+      "articleId": "18",
+      "rate": 3,
+      "id": "X8wsJ8Y"
     }
   ],
   "profile-ratings": [
@@ -995,6 +1001,13 @@
       "rate": 5,
       "feedback": "Профессионал высокого уровня! Очень хороший человек.",
       "id": "9wimApU"
+    },
+    {
+      "userId": "1",
+      "profileId": "",
+      "rate": 2,
+      "feedback": "Original",
+      "id": "PJtDdTa"
     }
   ]
 }
