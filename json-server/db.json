@@ -815,6 +815,12 @@
       "userId": "2",
       "text": "djfksla",
       "id": "8s_BpZJ"
+    },
+    {
+      "articleId": "6",
+      "userId": "2",
+      "text": "Тоже норм!",
+      "id": "DegCkJY"
     }
   ],
   "users": [
@@ -954,6 +960,13 @@
       "articleId": "18",
       "rate": 3,
       "id": "X8wsJ8Y"
+    },
+    {
+      "userId": "2",
+      "articleId": "6",
+      "rate": 3,
+      "feedback": "Не плохо!",
+      "id": "mftxdmr"
     }
   ],
   "profile-ratings": [
