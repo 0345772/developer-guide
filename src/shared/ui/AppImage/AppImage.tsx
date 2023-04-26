@@ -1,11 +1,11 @@
 import {
-    ImgHTMLAttributes, ReactNode, memo, useLayoutEffect, useState,
+    ImgHTMLAttributes, ReactElement, memo, useLayoutEffect, useState,
 } from 'react';
 
 interface AppImageProps extends ImgHTMLAttributes<HTMLImageElement> {
     className?: string;
-    fallback?: ReactNode;
-    errorFallback?: ReactNode;
+    fallback?: ReactElement;
+    errorFallback?: ReactElement;
 }
 
 export const AppImage = memo((props: AppImageProps) => {
