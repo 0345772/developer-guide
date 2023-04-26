@@ -14,4 +14,8 @@
     "i18n-ally.keystyle": "nested",
     "cSpell.words": false,
     "cSpell.enabled": false,
+    "eslint.ignoreUntitled": false,
+    "eslint.experimental.useFlatConfig": false,
+    "eslint.enable": true,
+    "files.eol": "\n"
 }
