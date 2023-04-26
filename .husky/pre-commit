@@ -1,8 +1,5 @@
 #!/bin/sh
 . "$(dirname "$0")/_/husky.sh"
 
-# npm run build:prod
-# npm run lint:ts
-# npm run lint:ts:fix
-# npm run lint:scss
-# npm run lint:scss:fix
+npx lint-staged
+
