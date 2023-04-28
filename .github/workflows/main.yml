@@ -41,9 +41,9 @@
 name: linting, testing, building
 on:
   push:
-    branches: [ main ]
+    branches: [ master ]
   pull_request:
-    branches: [ main ]
+    branches: [ master ]
 permissions:
   contents: write
   pages: write
@@ -79,8 +79,8 @@ jobs:
         run: npm run test:ui:ci
         if: always()
       - name: unit testing
-        run: npm run test:unit
         if: always()
+        run: npm run test:unit
       - name: Generate HTML report
         run: npm run test:ui:report
         if: always()
@@ -118,5 +118,4 @@ jobs:
         if: always()
       - name: linting css
         run: npm run lint:scss
-    
 
