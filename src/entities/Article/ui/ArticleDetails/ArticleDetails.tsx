@@ -18,7 +18,6 @@ import { ArticleCodeBlockComponent } from '../../ui/ArticleCodeBlockComponent/Ar
 import { ArticleImageBlockComponent } from '../../ui/ArticleImageBlockComponent/ArticleImageBlockComponent';
 import { ArticleTextBlockComponent } from '../../ui/ArticleTextBlockComponent/ArticleTextBlockComponent';
 import { fetchArticleById } from '../../model/services/fetchArticleById/fetchArticleById';
-import { articleDetailsReducer } from '../../model/slice/articleDetailsSlice';
 import cls from './ArticleDetails.module.scss';
 import {
     getArticleDetailsData,
@@ -27,6 +26,7 @@ import {
 } from '../../model/selectors/articleDetails';
 import { ArticleBlock } from '../../model/types/article';
 import { ArticleBlockType } from '../../model/consts/articleConsts';
+import { articleDetailsReducer } from '../../model/slice/articleDetailsSlice';
 
 interface ArticleDetailsProps {
     className?: string;
