@@ -12,7 +12,6 @@ export default {
     argTypes: {
         backgroundColor: { control: 'color' },
     },
-    // decorators: [withMock],
 } as ComponentMeta<typeof ArticleDetailsPage>;
 
 const Template: ComponentStory<typeof ArticleDetailsPage> = (args) => (

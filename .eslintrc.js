@@ -8,6 +8,7 @@ module.exports = {
         'plugin:react/recommended',
         'airbnb',
         'plugin:i18next/recommended',
+        'plugin:storybook/recommended',
     ],
     parser: '@typescript-eslint/parser',
     parserOptions: {
@@ -81,7 +82,12 @@ module.exports = {
         'no-undef': 'off',
         'react/no-array-index-key': 'off',
         'arrow-body-style': 'off',
-        'step65-plugin/path-checker': ['error', { alias: '@' }],
+        'step65-plugin/path-checker': [
+            'error',
+            {
+                alias: '@',
+            },
+        ],
         'step65-plugin/layer-imports': [
             'error',
             {

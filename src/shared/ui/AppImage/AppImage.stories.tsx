@@ -1,28 +1,39 @@
-import React from 'react';
-import { ComponentMeta, ComponentStory } from '@storybook/react';
-import { ThemeDecorator } from '@/shared/config/storybook/ThemeDecorator/ThemeDecorator';
+import { Meta, StoryObj } from '@storybook/react';
 import { AppImage } from './AppImage';
-import { Theme } from '@/shared/const/theme';
+import { StoreDecorator } from '@/shared/config/storybook/StoreDecorator/StoreDecorator';
 
-export default {
+const meta: Meta<typeof AppImage> = {
     title: 'AppImage',
     component: AppImage,
-    argTypes: {
-        backgroundColor: { control: 'color' },
-    },
-} as ComponentMeta<typeof AppImage>;
+    decorators: [StoreDecorator({})],
+};
+export default meta;
+type Story = StoryObj<typeof AppImage>;
 
-const Template: ComponentStory<typeof AppImage> = (args) => (
-    <AppImage {...args} />
-);
+export const Primary: Story = {
+    args: {},
+    render: () => <AppImage />,
+};
 
-export const Normal = Template.bind({});
-Normal.args = {};
+// export default {
+//     title: 'AppImage',
+//     component: AppImage,
+//     argTypes: {
+//         backgroundColor: { control: 'color' },
+//     },
+// } as Meta<typeof AppImage>;
 
-export const Dark = Template.bind({});
-Dark.args = {};
-Dark.decorators = [ThemeDecorator(Theme.DARK)];
+// const Template: StoryObj<typeof AppImage> = (args) => (
+//     <AppImage {...args} />
+// );
 
-export const Orange = Template.bind({});
-Orange.args = {};
-Orange.decorators = [ThemeDecorator(Theme.ORANGE)];
+// export const Normal = Template.bind({});
+// Normal.args = {};
+
+// export const Dark = Template.bind({});
+// Dark.args = {};
+// Dark.decorators = [ThemeDecorator(Theme.DARK)];
+
+// export const Orange = Template.bind({});
+// Orange.args = {};
+// Orange.decorators = [ThemeDecorator(Theme.ORANGE)];

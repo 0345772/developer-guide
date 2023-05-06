@@ -1,5 +1,4 @@
-import { Story } from '@storybook/react';
-// eslint-disable-next-line step65-plugin/layer-imports
+/* eslint-disable step65-plugin/layer-imports */
 import '@/app/styles/index.scss';
-
-export const StyleDecorator = (story: () => Story) => story();
+// @ts-ignore
+export const StyleDecorator = (story: () => StoryComponent) => story();

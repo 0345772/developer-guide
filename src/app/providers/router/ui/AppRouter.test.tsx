@@ -25,7 +25,7 @@ describe('app/router/AppRouter', () => {
     });
     test('Редирект не авторизованного пользователя на главную страницу', async () => {
         componentRender(<AppRouter />, {
-            route: getRouteProfile('1'),
+            route: getRouteProfile('4'),
         });
         const page = await screen.findByTestId('MainPage');
         expect(page).toBeInTheDocument();
