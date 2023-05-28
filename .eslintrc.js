@@ -9,7 +9,7 @@ module.exports = {
     "airbnb",
     "plugin:i18next/recommended",
     "plugin:storybook/recommended",
-    // "prettier",
+    "prettier",
   ],
   parser: "@typescript-eslint/parser",
   parserOptions: {
