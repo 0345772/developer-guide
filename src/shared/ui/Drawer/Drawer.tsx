@@ -1,8 +1,9 @@
-import {
-    memo, ReactNode, useCallback, useEffect,
-} from 'react';
+import { memo, ReactNode, useCallback, useEffect } from 'react';
 import { classNames } from '@/shared/lib/classNames/classNames';
-import { AnimationProvider, useAnimationLibs } from '@/shared/lib/components/AnimationProvider';
+import {
+    AnimationProvider,
+    useAnimationLibs,
+} from '@/shared/lib/components/AnimationProvider';
 import { Overlay } from '../Overlay/Overlay';
 import { Portal } from '../Portal/Portal';
 import cls from './Drawer.module.scss';
@@ -25,9 +26,7 @@ export const DrawerContent = memo((props: DrawerProps) => {
 
     const { theme } = useTheme();
 
-    const {
-        className, children, isOpen, onClose, lazy,
-    } = props;
+    const { className, children, isOpen, onClose, lazy } = props;
 
     const openDrawer = useCallback(() => {
         api.start({ y: 0, immediate: false });

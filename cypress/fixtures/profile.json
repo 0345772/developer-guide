@@ -1,12 +1,11 @@
 {
-  "id":"1",
-  "first": "test",
-  "lastname": "user",
-  "age": 45,
-  "currency": "USD",
-  "country": "Italy",
-  "city": "Neapol",
-  "username": "testuser",
-  "avatar":
-      "https://images.pexels.com/photos/247502/pexels-photo-247502.jpeg?cs=srgb&dl=pexels-pixabay-247502.jpg&fm=jpg"
+    "id": "1",
+    "first": "test",
+    "lastname": "user",
+    "age": 45,
+    "currency": "USD",
+    "country": "Italy",
+    "city": "Neapol",
+    "username": "testuser",
+    "avatar": "https://images.pexels.com/photos/247502/pexels-photo-247502.jpeg?cs=srgb&dl=pexels-pixabay-247502.jpg&fm=jpg"
 }

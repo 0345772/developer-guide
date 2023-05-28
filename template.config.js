@@ -3,11 +3,10 @@
  * @see https://marketplace.visualstudio.com/items?itemName=yongwoo.template
  */
 module.exports = {
-
     templateRootPath: './.templates',
     // After copying the template file the `replaceFileTextFn` function is executed
     replaceFileTextFn: (fileText, templateName, utils) => {
-    // @see https://www.npmjs.com/package/change-case
+        // @see https://www.npmjs.com/package/change-case
         const { changeCase } = utils;
         // You can change the text in the file
         return fileText

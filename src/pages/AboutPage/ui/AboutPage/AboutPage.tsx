@@ -1,6 +1,7 @@
 import { memo } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Page } from '@/widgets/Page';
+import { Counter } from '@/entities/Counter/ui/Counter/Counter';
 
 const AboutPage = memo(() => {
     const { t, i18n } = useTranslation('about');

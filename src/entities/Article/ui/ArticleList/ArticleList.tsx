@@ -16,15 +16,16 @@ interface ArticleListProps {
     target?: HTMLAttributeAnchorTarget;
 }
 
-const getSkeletons = (view: ArticleView) => new Array(view === ArticleView.SMALL ? 9 : 4)
-    .fill(0)
-    .map((item, index) => (
-        <ArticleListItemSkeleton
-            className={cls.card}
-            key={index}
-            view={view}
-        />
-    ));
+const getSkeletons = (view: ArticleView) =>
+    new Array(view === ArticleView.SMALL ? 9 : 4)
+        .fill(0)
+        .map((item, index) => (
+            <ArticleListItemSkeleton
+                className={cls.card}
+                key={index}
+                view={view}
+            />
+        ));
 
 export const ArticleList = memo((props: ArticleListProps) => {
     const {
@@ -52,9 +53,7 @@ export const ArticleList = memo((props: ArticleListProps) => {
     return (
         <div
             data-testid="ArticleList"
-            className={
-                classNames(cls.ArticleList, {}, [className, cls[view]])
-            }
+            className={classNames(cls.ArticleList, {}, [className, cls[view]])}
         >
             {articles.map((item) => (
                 <ArticleListItem
@@ -63,10 +62,8 @@ export const ArticleList = memo((props: ArticleListProps) => {
                     target={target}
                     key={item.id}
                     className={cls.card}
-
                 />
             ))}
-
         </div>
     );
 });

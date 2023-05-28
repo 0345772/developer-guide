@@ -29,9 +29,7 @@ const ArticleDetailsPage = ({ className }: ArticleDetailsPageProps) => {
     const { id } = useParams<{ id: string }>();
 
     if (!id) {
-        return (
-            null
-        );
+        return null;
     }
 
     return (

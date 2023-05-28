@@ -3,13 +3,13 @@
     "i18n-easy.localesPaths": ["public/locales", "src/shared/config/i18n"],
     "i18n-ally.localesPaths": ["public/locales", "src/shared/config/i18n"],
     "eslint.alwaysShowStatus": true,
-    "eslint.debug": true,
-    "eslint.format.enable": true,
+    // "eslint.debug": true,
+    // "eslint.format.enable": true,
     "prettier-eslint-typescript.eslintConfig": {},
     "eslint.run": "onSave",
     "eslint.workingDirectories": ["**/*.{ts,tsx}"],
     "eslint.lintTask.options": ".",
-    "eslint.options": {},
+    "eslint.options": "../.prettierrc.json",
     "eslint.lintTask.enable": true,
     "i18n-ally.keystyle": "nested",
     "cSpell.words": false,
@@ -17,5 +17,12 @@
     "eslint.ignoreUntitled": false,
     "eslint.experimental.useFlatConfig": false,
     "eslint.enable": true,
-    "files.eol": "\n"
+    "files.eol": "\n",
+    "editor.defaultFormatter": "rvest.vs-code-prettier-eslint",
+    "editor.formatOnType": false, // required
+    "editor.formatOnPaste": true, // optional
+    "editor.formatOnSave": true, // optional
+    "editor.formatOnSaveMode": "file", // required to format on save
+    "files.autoSave": "onFocusChange", // optional but recommended
+    "vs-code-prettier-eslint.prettierLast": false // set as "true" to run 'prettier' last not first
 }

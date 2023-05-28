@@ -104,18 +104,18 @@ npm run start:dev или npm run start:dev:vite - запуск сервера + 
 Пример:
 
 ```typescript jsx
-import React from "react";
-import { ComponentStory, ComponentMeta } from "@storybook/react";
+import React from 'react';
+import { ComponentStory, ComponentMeta } from '@storybook/react';
 
-import { ThemeDecorator } from "@/shared/config/storybook/ThemeDecorator/ThemeDecorator";
-import { Button, ButtonSize, ButtonTheme } from "./Button";
-import { Theme } from "@/shared/const/theme";
+import { ThemeDecorator } from '@/shared/config/storybook/ThemeDecorator/ThemeDecorator';
+import { Button, ButtonSize, ButtonTheme } from './Button';
+import { Theme } from '@/shared/const/theme';
 
 export default {
-    title: "shared/Button",
+    title: 'shared/Button',
     component: Button,
     argTypes: {
-        backgroundColor: { control: "color" },
+        backgroundColor: { control: 'color' },
     },
 } as ComponentMeta<typeof Button>;
 
@@ -123,12 +123,12 @@ const Template: ComponentStory<typeof Button> = (args) => <Button {...args} />;
 
 export const Primary = Template.bind({});
 Primary.args = {
-    children: "Text",
+    children: 'Text',
 };
 
 export const Clear = Template.bind({});
 Clear.args = {
-    children: "Text",
+    children: 'Text',
     theme: ButtonTheme.CLEAR,
 };
 ```

@@ -1,12 +1,8 @@
 import { useDispatch } from 'react-redux';
 import { useTranslation } from 'react-i18next';
 import { Button } from '@/shared/ui/Button';
-import {
-    useCounterActions,
-} from '../../model/slice/counterSlice';
-import {
-    useCounterValue,
-} from '../../model/selectors/getCounterValue/getCounterValue';
+import { useCounterActions } from '../../model/slice/counterSlice';
+import { useCounterValue } from '../../model/selectors/getCounterValue/getCounterValue';
 
 export const Counter = () => {
     const dispatch = useDispatch();
@@ -29,8 +25,7 @@ export const Counter = () => {
     return (
         <div style={{ margin: '50px' }}>
             <h3 style={{ textAlign: 'center' }} data-testid="value-title">
-                {t('Значение')}
-                :
+                {t('Значение')}:
                 <span
                     style={{
                         fontSize: '45px',

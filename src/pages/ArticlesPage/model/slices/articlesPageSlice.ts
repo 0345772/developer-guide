@@ -5,7 +5,10 @@ import {
 } from '@reduxjs/toolkit';
 import { StateSchema } from '@/app/providers/StoreProvider';
 import {
-    Article, ArticleView, ArticleSortField, ArticleType,
+    Article,
+    ArticleView,
+    ArticleSortField,
+    ArticleType,
 } from '@/entities/Article';
 import { ARTICLES_VIEW_LOCALSTORAGE_KEY } from '@/shared/const/localstorage';
 import { SortOrder } from '@/shared/types/sort';
@@ -79,20 +82,17 @@ const articlesPageSlice = createSlice({
                     articlesAdapter.removeAll(state);
                 }
             })
-            .addCase(
-                fetchArticlesList.fulfilled,
-                (state, action) => {
-                    state.isLoading = false;
+            .addCase(fetchArticlesList.fulfilled, (state, action) => {
+                state.isLoading = false;
 
-                    state.hasMore = action.payload.length > 0;
+                state.hasMore = action.payload.length > 0;
 
-                    if (action.meta.arg.replace) {
-                        articlesAdapter.setAll(state, action.payload);
-                    } else {
-                        articlesAdapter.addMany(state, action.payload);
-                    }
-                },
-            )
+                if (action.meta.arg.replace) {
+                    articlesAdapter.setAll(state, action.payload);
+                } else {
+                    articlesAdapter.addMany(state, action.payload);
+                }
+            })
             .addCase(fetchArticlesList.rejected, (state, action) => {
                 state.isLoading = false;
                 state.error = action.payload;
@@ -100,4 +100,5 @@ const articlesPageSlice = createSlice({
     },
 });
 
-export const { reducer: articlesPageReducer, actions: articlesPageActions } = articlesPageSlice;
+export const { reducer: articlesPageReducer, actions: articlesPageActions } =
+    articlesPageSlice;

@@ -15,11 +15,5 @@ export const BugButton = () => {
         }
     }, [error]);
 
-    return (
-        <Button
-            onClick={onThrow}
-        >
-            {t('Бросить ошибку')}
-        </Button>
-    );
+    return <Button onClick={onThrow}>{t('Бросить ошибку')}</Button>;
 };
