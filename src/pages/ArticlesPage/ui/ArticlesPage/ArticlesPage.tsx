@@ -15,7 +15,6 @@ import { fetchNextArticlesPage } from '../../model/services/fetchNextArticlesPag
 import { ArticlesPageFilters } from '../ArticlesPageFilters/ArticlesPageFilters';
 import { ArticleInfiniteList } from '../ArticleInfiniteList/ArticleInfiniteList';
 import { useAppDispatch } from '@/shared/lib/hooks/useAppDispatch/useAppDispatch';
-
 interface ArticlesPageProps {
     className?: string;
 }
@@ -29,6 +28,7 @@ const ArticlesPage = memo((props: ArticlesPageProps) => {
     const dispatch = useAppDispatch();
 
     const [searchParams] = useSearchParams();
+
     const onLoadNextPart = useCallback(() => {
         dispatch(fetchNextArticlesPage());
     }, [dispatch]);
