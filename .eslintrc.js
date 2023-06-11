@@ -66,10 +66,10 @@ module.exports = {
       },
     ],
     "max-len": [
-      "error",
+      2,
       {
         ignoreComments: true,
-        code: 220,
+        code: 120,
       },
     ],
     "jsx-a11y/no-static-element-interactions": "off",
@@ -81,20 +81,20 @@ module.exports = {
     "react/no-array-index-key": "off",
     "arrow-body-style": "off",
     "step65-plugin/path-checker": [
-      "error",
+      2,
       {
         alias: "@",
       },
     ],
     "step65-plugin/layer-imports": [
-      "error",
+      2,
       {
         alias: "@",
         ignoreImportPatterns: ["**/StoreProvider", "**/testing"],
       },
     ],
     "step65-plugin/public-api-imports": [
-      "error",
+      2,
       {
         alias: "@",
         testFilesPatterns: [
@@ -105,9 +105,8 @@ module.exports = {
       },
     ],
     "linebreak-style": ["error", "unix"],
-    quotes: ["error", "single"],
-    semi: ["error", "always"],
     "react/jsx-max-props-per-line": ["error", { maximum: 4 }],
+    "react/no-unstable-nested-components": "warn",
   },
   globals: {
     __IS_DEV__: true,
