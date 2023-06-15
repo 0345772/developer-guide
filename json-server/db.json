@@ -971,7 +971,7 @@
         "isCounterEnabled": false
       },
       "jsonSettings": {
-        "theme": "app_dark_theme",
+        "theme": "app_orange_theme",
         "isFirstVisit": true,
         "settingsPageHasBeenOpen": false
       },
@@ -989,7 +989,7 @@
         "isCounterEnabled": false
       },
       "jsonSettings": {
-        "theme": "app_dark_theme",
+        "theme": "app_light_theme",
         "isFirstVisit": true,
         "settingsPageHasBeenOpen": false
       },
@@ -1021,7 +1021,7 @@
       "lastname": "Stepovoy",
       "age": 57,
       "currency": "UAH",
-      "country": "Italy",
+      "country": "Ukraine",
       "city": "Kyiv",
       "username": "admin",
       "avatar": "https://yt3.ggpht.com/ytc/AAUvwngFzM_Rf6MNwOnFcuphoj93k7VFjlIrj-kSMxbh=s900-c-k-c0x00ffffff-no-rj"
