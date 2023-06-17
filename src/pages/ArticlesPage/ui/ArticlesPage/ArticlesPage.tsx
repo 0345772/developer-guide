@@ -3,8 +3,8 @@ import { useTranslation } from 'react-i18next';
 import { useSearchParams } from 'react-router-dom';
 import { classNames } from '@/shared/lib/classNames/classNames';
 import {
-    DynamicModuleLoader,
-    ReducersList,
+  DynamicModuleLoader,
+  ReducersList,
 } from '@/shared/lib/components/DynamicModuleLoader/DynamicModuleLoader';
 import { useInitialEffect } from '@/shared/lib/hooks/useInitialEffect/useInitialEffect';
 import { Page } from '@/widgets/Page';
@@ -15,40 +15,42 @@ import { fetchNextArticlesPage } from '../../model/services/fetchNextArticlesPag
 import { ArticlesPageFilters } from '../ArticlesPageFilters/ArticlesPageFilters';
 import { ArticleInfiniteList } from '../ArticleInfiniteList/ArticleInfiniteList';
 import { useAppDispatch } from '@/shared/lib/hooks/useAppDispatch/useAppDispatch';
+import { ArticlePageGreeting } from '@/features/articlePageGreeting';
 interface ArticlesPageProps {
-    className?: string;
+  className?: string;
 }
 
 const reducers: ReducersList = {
-    articlesPage: articlesPageReducer,
+  articlesPage: articlesPageReducer,
 };
 const ArticlesPage = memo((props: ArticlesPageProps) => {
-    const { className } = props;
-    const { t } = useTranslation('article');
-    const dispatch = useAppDispatch();
+  const { className } = props;
+  const { t } = useTranslation('article');
+  const dispatch = useAppDispatch();
 
-    const [searchParams] = useSearchParams();
+  const [searchParams] = useSearchParams();
 
-    const onLoadNextPart = useCallback(() => {
-        dispatch(fetchNextArticlesPage());
-    }, [dispatch]);
+  const onLoadNextPart = useCallback(() => {
+    dispatch(fetchNextArticlesPage());
+  }, [dispatch]);
 
-    useInitialEffect(() => {
-        dispatch(initArticlesPage(searchParams));
-    });
+  useInitialEffect(() => {
+    dispatch(initArticlesPage(searchParams));
+  });
 
-    return (
-        <DynamicModuleLoader reducers={reducers} removeAfterUnmount={false}>
-            <Page
-                data-testid="ArticlesPage"
-                onScrollEnd={onLoadNextPart}
-                className={classNames(cls.ArticlesPage, {}, [className])}
-            >
-                <ArticlesPageFilters />
-                <ArticleInfiniteList className={cls.list} />
-            </Page>
-        </DynamicModuleLoader>
-    );
+  return (
+    <DynamicModuleLoader reducers={reducers} removeAfterUnmount={false}>
+      <Page
+        data-testid="ArticlesPage"
+        onScrollEnd={onLoadNextPart}
+        className={classNames(cls.ArticlesPage, {}, [className])}
+      >
+        <ArticlesPageFilters />
+        <ArticleInfiniteList className={cls.list} />
+        <ArticlePageGreeting />
+      </Page>
+    </DynamicModuleLoader>
+  );
 });
 
 export default ArticlesPage;
