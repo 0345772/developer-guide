@@ -62,6 +62,7 @@ module.exports = {
           "definition",
           "gap",
           "as",
+          "feature",
         ],
       },
     ],
