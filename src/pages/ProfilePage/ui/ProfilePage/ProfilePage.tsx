@@ -1,29 +1,26 @@
 import { useParams } from 'react-router-dom';
 import { classNames } from '@/shared/lib/classNames/classNames';
 import { Page } from '@/widgets/Page';
-import { VStack } from '@/shared/ui/Stack';
+import { VStack } from '@/shared/ui/deprecated/Stack';
 import { EditableProfileCard } from '@/features/editableProfileCard';
 import { ProfileRating } from '@/features/profileRating';
 
 interface ProfilePageProps {
-    className?: string;
-    profileId: string;
+  className?: string;
+  profileId: string;
 }
 
 const ProfilePage = ({ className, profileId }: ProfilePageProps) => {
-    const { id } = useParams<{ id: string }>();
+  const { id } = useParams<{ id: string }>();
 
-    return (
-        <Page
-            data-testid="ProfilePage"
-            className={classNames('', {}, [className])}
-        >
-            <VStack gap="16" max>
-                <EditableProfileCard id={id} />
-                <ProfileRating profileId={profileId} />
-            </VStack>
-        </Page>
-    );
+  return (
+    <Page data-testid="ProfilePage" className={classNames('', {}, [className])}>
+      <VStack gap="16" max>
+        <EditableProfileCard id={id} />
+        <ProfileRating profileId={profileId} />
+      </VStack>
+    </Page>
+  );
 };
 
 export default ProfilePage;
