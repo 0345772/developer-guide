@@ -1,9 +1,9 @@
 import { FeatureFlags } from "@/shared/types/featureFlags";
 
 // ! Фичи в ходе сессии не меняются
-// ? Именно поэтому их не обязательно делать рефктивными
+// ? Именно поэтому их не обязательно делать реaктивными
 
-let featureFlags: FeatureFlags;
+let featureFlags: FeatureFlags = {};
 
 export function setFeatureFlags(newFeatureFlags?: FeatureFlags) {
   if (newFeatureFlags) {
