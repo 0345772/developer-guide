@@ -9,7 +9,9 @@ import { getSidebarItems } from '../../model/selectors/getSidebarItems';
 import { ThemeSwitcher } from '@/features/ThemeSwitcher';
 import { LangSwitcher } from '@/features/LangSwitcher';
 import { ToggleFeatures } from '@/shared/lib/features';
-import { AppLogo } from '@/shared/ui/deprecated/AppLogo';
+import { AppLogo } from '@/shared/ui/redesigned/AppLogo';
+import { Icon } from '@/shared/ui/redesigned/Icon';
+import ArrowIcon from '@/shared/assets/icons/arrow-bottom.svg';
 
 interface SidebarProps {
   className?: string;
@@ -36,18 +38,30 @@ export const Sidebar = memo(({ className }: SidebarProps) => {
       feature={'isAppRedesigned'}
       on={
         <aside
-          // eslint-disable-next-line i18next/no-literal-string
           data-testId="sidebarRedesigned"
           className={classNames(
             cls.SidebarRedesigned,
-            { [cls.collapsed]: collapsed },
+            { [cls.collapsedRedesigned]: collapsed },
             [className],
           )}
         >
-          <AppLogo className={cls.appLogo} />
-          {/* <VStack role="navigation" gap="8" className={cls.items}>
+          <AppLogo
+            size={collapsed ? 50 : 100}
+            text={collapsed ? 'JS' : 'Development'}
+            title={collapsed ? '***' : 'Step_65'}
+            className={cls.appLogo}
+          />
+          <VStack role="navigation" gap="8" className={cls.items}>
             {itemsList}
-          </VStack> */}
+          </VStack>
+
+          <Icon
+            data-testId="sidebar-toggle"
+            onClick={onToggle}
+            className={cls.collapseBtn}
+            Svg={ArrowIcon}
+            clickable
+          ></Icon>
 
           <div className={cls.switchers}>
             <ThemeSwitcher />
