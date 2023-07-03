@@ -1,6 +1,9 @@
 :root {
     --font-family-main: consolas, "Times New Roman", serif;
     /* stylelint-disable-next-line CssSyntaxError */
+    --font-size-mini: 8px;
+    --font-line-mini: 16px;
+    --font-mini: var(--font-size-mini) / var(--font-line-mini) / var(--font-family-main);
     --font-size-s: 12px;
     --font-line-s: 20px;
     --font-s: var(--font-size-s) / var(--font-line-s) var(--font-family-main);
@@ -21,8 +24,16 @@
     --overlay-color: rgba(0 0 0 / 60%);
     --red-light: rgb(244 20 20);
     --red-dark: rgb(121 13 13);
+    --logo-title: rgb(209, 120, 120);
+    --logo-text: rgb(91, 194, 232);
+    --logo-1-title:rgb(233, 166, 213);
+    --logo-1-text: rgba(40, 55, 156, 0.701);
 
     // redesigned
+
+    // mini
+
+    --font-mini-redesigned: var(--font-size-mini) / var(--font-line-mini) / var(--font-family-text-redesigned)
 
     // s
     --font-s-redesigned: var(--font-size-s) / var(--font-line-s) var(--font-family-text-redesigned);

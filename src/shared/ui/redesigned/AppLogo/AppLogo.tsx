@@ -3,18 +3,20 @@ import { useTranslation } from 'react-i18next';
 import { classNames } from '@/shared/lib/classNames/classNames';
 import cls from './AppLogo.module.scss';
 import AppSvg from '@/shared/assets/icons/app-image.svg';
-import { Text, TextAlign, TextSize, TextTheme } from '../../deprecated/Text';
-import { HStack } from '../../deprecated/Stack';
+import { Text, TextSize, TextVariant } from '../Text';
+import { HStack } from '../Stack';
 
 interface AppLogoProps {
   className?: string;
-  size?: number;
+  size: number;
   title: string;
   text: string;
+  textSize?: TextSize;
+  variant?: TextVariant;
 }
 
 export const AppLogo = memo((props: AppLogoProps) => {
-  const { className, size = 100, title, text } = props;
+  const { className, size = 100, title, text, textSize, variant } = props;
   const { t } = useTranslation();
 
   return (
@@ -34,11 +36,12 @@ export const AppLogo = memo((props: AppLogoProps) => {
         />
       </HStack>
       <Text
-        align={TextAlign.CENTER}
-        size={TextSize.S}
-        theme={TextTheme.ERROR}
-        text={text}
-        title={title}
+        className={cls.appLogoText}
+        align="center"
+        size={textSize}
+        variant={variant}
+        text={t(text)}
+        title={t(title)}
       />
     </>
   );
