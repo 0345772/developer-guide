@@ -1,6 +1,5 @@
 .Card {
     padding: 15px;
-    border-radius: 12px;
 }
 
 .withoutPadding {
@@ -17,6 +16,15 @@
 
 .light {
     background: var(--light-bg-redesigned)
+}
+
+.normal {
+    border-radius: 12px;
+
+}
+
+.round {
+    border-radius: 40px;
 }
 
 .max {

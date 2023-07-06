@@ -1,19 +1,19 @@
 import React from 'react';
 import { ComponentMeta, ComponentStory } from '@storybook/react';
 import { ThemeDecorator } from '@/shared/config/storybook/ThemeDecorator/ThemeDecorator';
+import { StickyContentLayout } from './StickyContentLayout';
 import { Theme } from '@/shared/const/theme';
-import {[FTName]} from './[FTName]';
 
 export default {
-    title: '[FTName]',
-    component: [FTName],
-    argTypes: {
-        backgroundColor: { control: 'color' },
-    },
-} as ComponentMeta<typeof [FTName]>;
+  title: 'StickyContentLayout',
+  component: StickyContentLayout,
+  argTypes: {
+    backgroundColor: { control: 'color' },
+  },
+} as ComponentMeta<typeof StickyContentLayout>;
 
-const Template: ComponentStory<typeof [FTName]> = (args) => (
-    <[FTName] {...args} />
+const Template: ComponentStory<typeof StickyContentLayout> = args => (
+  <StickyContentLayout {...args} />
 );
 
 export const Normal = Template.bind({});
