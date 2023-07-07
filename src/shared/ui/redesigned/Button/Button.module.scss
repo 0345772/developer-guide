@@ -2,10 +2,28 @@
     padding: 6px 15px;
     cursor: pointer;
     color: var(--text-redesigned);
+    display: flex;
+    align-items: center;
 
     &:hover {
-        color: var(--accent-redesigned)
+        color: var(--accent-redesigned);
+
+        .addonLeft svg, .addonRight svg {
+          color: var(--accent-redesigned)
+        }
     }
+}
+
+.withAddon {
+  padding: 0px 5px;
+}
+
+.addonLeft, .addonRiht {
+    display: flex;
+}
+
+.addonLeft svg, .addonRight svg {
+    color: var(--hint-redesigned)
 }
 
 .clear {
@@ -19,7 +37,6 @@
     background: var(--light-bg-redesigned);
     border: none;
     outline: none;
-    padding: 8px 16px;
     border-radius: 34px;
 }
 

@@ -110,5 +110,11 @@
   "Оценка статьи скоро появится": "Article rating coming soon",
   "Степ_65": "Step_65",
   "Разработчик": "Developer",
-  "Сорт по:": "Sort with:"
+  "Сорт по:": "Sort with:",
+  "Поиск": "Search",
+  "дате создания": "date of creation",
+  "солличеству просмотров": "number of views",
+  "названию": "name",
+  "возростанию": "ascending",
+  "убыванию": "descending"
 }
