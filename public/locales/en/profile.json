@@ -1,0 +1,10 @@
+{
+    "Произошла ошибка при загрузке профиля": "An error occurred while loading the profile",
+    "Попробуйте обновить страницу": "Try refreshing the page",
+    "имя": "name",
+    "фамилия": "last name",
+    "возраст": "age",
+    "город": "city",
+    "имя пользователя": "username",
+    "аватар": "avatar"
+}
