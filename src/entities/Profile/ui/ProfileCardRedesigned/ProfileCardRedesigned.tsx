@@ -68,7 +68,7 @@ export const ProfileCardRedesigned = memo((props: ProfileCardProps) => {
     onChangeCurrency,
   } = props;
   return (
-    <Card padding="24" className={className}>
+    <Card max padding="24" className={className}>
       <VStack gap="32">
         {data?.avatar && (
           <HStack className={cls.avatarWrapper} justify="center" max>
