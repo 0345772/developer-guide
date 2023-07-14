@@ -969,7 +969,7 @@
       "features": {
         "isArticleRatingEnabled": true,
         "isCounterEnabled": true,
-        "isAppRedesigned": true
+        "isAppRedesigned": false
       },
       "avatar": "https://img.freepik.com/free-photo/half-profile-image-of-handsome-young-caucasian-man-with-good-skin-brown-eyes-black-stylish-hair-and-stubble-posing-isolated-against-blank-wall-looking-in-front-of-him-smiling_343059-4560.jpg?w=900&t=st=1689095031~exp=1689095631~hmac=5d19010b2e5867fb1dd94953c66b93009b5eec8bc5348504ad7c1085b72e9164",
       "jsonSettings": {
@@ -993,7 +993,7 @@
       },
       "avatar": "https://img.freepik.com/free-photo/portrait-of-white-man-isolated_53876-40306.jpg?w=826&t=st=1689163372~exp=1689163972~hmac=84dcb7c69c305dacecd2284c9f2f40c7295713ddde1db5fe4f266ee31a4ef65e",
       "jsonSettings": {
-        "theme": "app_light_theme",
+        "theme": "app_dark_theme",
         "isArticlesPageWasOpened": true
       }
     },
