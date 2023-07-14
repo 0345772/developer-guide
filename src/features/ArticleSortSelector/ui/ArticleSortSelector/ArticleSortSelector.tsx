@@ -66,11 +66,13 @@ export const ArticleSortSelector = (props: ArticleSortSelectorProps) => {
           <VStack gap="8">
             <Text title={t('Сорт по:')} />
             <ListBox
+              direction="top left"
               items={sortFieldOptions}
               value={sort}
               onChange={onChangeSort}
             />
             <ListBox
+              direction="top right"
               items={orderOptions}
               value={order}
               onChange={onChangeOrder}

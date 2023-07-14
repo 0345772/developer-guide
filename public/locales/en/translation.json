@@ -116,5 +116,9 @@
   "солличеству просмотров": "number of views",
   "названию": "name",
   "возростанию": "ascending",
-  "убыванию": "descending"
+  "убыванию": "descending",
+  "Настройки": "Settings",
+  "Варианты интерфейса": "Interface of variants",
+  "Старый": "Old",
+  "Новый": "New"
 }

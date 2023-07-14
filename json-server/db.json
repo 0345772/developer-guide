@@ -944,6 +944,18 @@
       "userId": "1",
       "text": "n,.,m",
       "id": "iRzbRB-"
+    },
+    {
+      "articleId": "x2N6e6H",
+      "userId": "4",
+      "text": "Hello, amigo!",
+      "id": "GYvpk_C"
+    },
+    {
+      "articleId": "17",
+      "userId": "3",
+      "text": "alibaba",
+      "id": "UyUkvAr"
     }
   ],
   "users": [
@@ -959,13 +971,13 @@
         "isCounterEnabled": true,
         "isAppRedesigned": true
       },
+      "avatar": "https://img.freepik.com/free-photo/half-profile-image-of-handsome-young-caucasian-man-with-good-skin-brown-eyes-black-stylish-hair-and-stubble-posing-isolated-against-blank-wall-looking-in-front-of-him-smiling_343059-4560.jpg?w=900&t=st=1689095031~exp=1689095631~hmac=5d19010b2e5867fb1dd94953c66b93009b5eec8bc5348504ad7c1085b72e9164",
       "jsonSettings": {
-        "theme": "app_orange_theme",
+        "theme": "app_light_theme",
         "isFirstVisit": true,
         "settingsPageHasBeenOpen": false,
         "isArticlesPageWasOpened": true
-      },
-      "avatar": "https://db3pap007files.storage.live.com/y4m2oFt25EWu34OC7ybfpcK5mk3uDHac22yyo0ao5dsK7_kfzVqW4jJwnIZlKM9PQ9_jsZQPmj-zGWkustq7DvA4L3E5w3RP4qPraQwo3Y6gYKk4_K-z5uqxmGg3wuXdS1ysSr340Gmwwh_m75G4ef8tF5s8mbOM2OAAJBMKm5D3wYX5jndimdpkQeVYLL-rAKG?encodeFailures=1&width=636&height=849"
+      }
     },
     {
       "id": "2",
@@ -976,52 +988,51 @@
       ],
       "features": {
         "isArticleRatingEnabled": false,
-        "isCounterEnabled": false
+        "isCounterEnabled": false,
+        "isAppRedesigned": true
       },
+      "avatar": "https://img.freepik.com/free-photo/portrait-of-white-man-isolated_53876-40306.jpg?w=826&t=st=1689163372~exp=1689163972~hmac=84dcb7c69c305dacecd2284c9f2f40c7295713ddde1db5fe4f266ee31a4ef65e",
       "jsonSettings": {
         "theme": "app_light_theme",
-        "isFirstVisit": true,
-        "settingsPageHasBeenOpen": false,
         "isArticlesPageWasOpened": true
-      },
-      "avatar": "https://thypix.com/wp-content/uploads/2022/08/hacker-avatar-profile-picture-thypix-48.jpg"
+      }
     },
     {
       "id": "3",
       "username": "manager",
       "password": "123",
-      "roles": [
+      "role": [
         "MANAGER"
       ],
       "features": {
         "isArticleRatingEnabled": true,
-        "isCounterEnabled": false
+        "isCounterEnabled": false,
+        "isAppRedesigned": true
       },
+      "avatar": "https://img.freepik.com/premium-vector/3d-man-avatar-happy-smiling-face-icon-young-businessman-student-or-freelancer_313242-1219.jpg?w=740",
       "jsonSettings": {
         "theme": "app_orange_theme",
-        "isFirstVisit": true,
-        "settingsPageHasBeenOpen": false,
         "isArticlesPageWasOpened": true
-      },
-      "avatar": "https://media.istockphoto.com/id/1075599562/uk/%D1%84%D0%BE%D1%82%D0%BE/%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D1%96%D1%81%D1%82-%D1%8F%D0%BA%D0%B8%D0%B9-%D0%BF%D1%80%D0%B0%D1%86%D1%8E%D1%94-%D0%B7-%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BD%D0%B8%D0%BC-%D0%BA%D0%BE%D0%B4%D0%BE%D0%BC.jpg?s=1024x1024&w=is&k=20&c=NoZe8aCSrH66Gyxq5oenvD1fqEIqcxmQKr5H1LAj6Es="
+      }
     },
     {
       "id": "4",
       "username": "testuser",
       "password": "123",
       "roles": [
-        "ADMIN"
+        "TEST_USER"
       ],
       "features": {
         "isArticleRatingEnabled": false,
         "isCounterEnabled": true
       },
+      "avatar": "https://images.pexels.com/photos/247502/pexels-photo-247502.jpeg?cs=srgb&dl=pexels-pixabay-247502.jpg&fm=jpg",
       "jsonSettings": {
-        "theme": "app_dark_theme",
+        "theme": "app_orange_theme",
         "isFirstVisit": true,
-        "settingsPageHasBeenOpen": true
-      },
-      "avatar": "https://images.pexels.com/photos/247502/pexels-photo-247502.jpeg?cs=srgb&dl=pexels-pixabay-247502.jpg&fm=jpg"
+        "settingsPageHasBeenOpen": true,
+        "isArticlesPageWasOpened": true
+      }
     }
   ],
   "profile": [
@@ -1029,18 +1040,18 @@
       "id": "1",
       "first": "Vasyl",
       "lastname": "Step",
-      "age": 58,
-      "currency": "USD",
+      "age": 55,
+      "currency": "EUR",
       "country": "Ukraine",
       "city": "Kyiv",
       "username": "admin",
-      "avatar": "https://db3pap007files.storage.live.com/y4m2oFt25EWu34OC7ybfpcK5mk3uDHac22yyo0ao5dsK7_kfzVqW4jJwnIZlKM9PQ9_jsZQPmj-zGWkustq7DvA4L3E5w3RP4qPraQwo3Y6gYKk4_K-z5uqxmGg3wuXdS1ysSr340Gmwwh_m75G4ef8tF5s8mbOM2OAAJBMKm5D3wYX5jndimdpkQeVYLL-rAKG?encodeFailures=1&width=636&height=849"
+      "avatar": "https://img.freepik.com/free-photo/half-profile-image-of-handsome-young-caucasian-man-with-good-skin-brown-eyes-black-stylish-hair-and-stubble-posing-isolated-against-blank-wall-looking-in-front-of-him-smiling_343059-4560.jpg?w=900&t=st=1689095031~exp=1689095631~hmac=5d19010b2e5867fb1dd94953c66b93009b5eec8bc5348504ad7c1085b72e9164"
     },
     {
       "id": "2",
-      "first": "Step",
-      "lastname": "step_65",
-      "age": 50,
+      "first": "Jon",
+      "lastname": "Smitt",
+      "age": 25,
       "currency": "EUR",
       "country": "Austria",
       "city": "Rim",
@@ -1150,6 +1161,20 @@
       "rate": 3,
       "feedback": "Не плохо!",
       "id": "mftxdmr"
+    },
+    {
+      "userId": "1",
+      "articleId": "QNZ-TXR",
+      "rate": 4,
+      "feedback": "Article norm!",
+      "id": "ElX5ocG"
+    },
+    {
+      "userId": "3",
+      "articleId": "17",
+      "rate": 3,
+      "feedback": "asjklsd;a",
+      "id": "QP4Edje"
     }
   ],
   "profile-ratings": [
