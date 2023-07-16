@@ -51,7 +51,7 @@
       "title": "Javascript news",
       "subtitle": "Что нового в JS за 2022 год?",
       "img": "https://teknotower.com/wp-content/uploads/2020/11/js.png",
-      "views": 2324,
+      "views": 2,
       "createdAt": "01.01.2023",
       "userId": "1",
       "type": [
@@ -123,7 +123,7 @@
       "title": "Python news",
       "subtitle": "Что нового в JS за 2022 год?",
       "img": "https://www.clipartmax.com/png/small/434-4343754_python-logo.png",
-      "views": 812,
+      "views": 5,
       "createdAt": "05.01.2022",
       "userId": "1",
       "type": [
@@ -195,7 +195,7 @@
       "title": "Диктаторы",
       "subtitle": "Диктатуры и диктаторы",
       "img": "https://img.tsn.ua/cached/778/tsn-45ddb1c1da8bc78232f746637fde253d/thumbs/428x268/22/e8/2cdd25c24a48672e1af4cef00261e822.jpeg",
-      "views": 1522,
+      "views": 1,
       "createdAt": "10.01.2023",
       "userId": "1",
       "type": [
@@ -969,11 +969,11 @@
       "features": {
         "isArticleRatingEnabled": true,
         "isCounterEnabled": true,
-        "isAppRedesigned": false
+        "isAppRedesigned": true
       },
       "avatar": "https://img.freepik.com/free-photo/half-profile-image-of-handsome-young-caucasian-man-with-good-skin-brown-eyes-black-stylish-hair-and-stubble-posing-isolated-against-blank-wall-looking-in-front-of-him-smiling_343059-4560.jpg?w=900&t=st=1689095031~exp=1689095631~hmac=5d19010b2e5867fb1dd94953c66b93009b5eec8bc5348504ad7c1085b72e9164",
       "jsonSettings": {
-        "theme": "app_light_theme",
+        "theme": "app_dark_theme",
         "isFirstVisit": true,
         "settingsPageHasBeenOpen": false,
         "isArticlesPageWasOpened": true
@@ -993,7 +993,7 @@
       },
       "avatar": "https://img.freepik.com/free-photo/portrait-of-white-man-isolated_53876-40306.jpg?w=826&t=st=1689163372~exp=1689163972~hmac=84dcb7c69c305dacecd2284c9f2f40c7295713ddde1db5fe4f266ee31a4ef65e",
       "jsonSettings": {
-        "theme": "app_dark_theme",
+        "theme": "app_orange_theme",
         "isArticlesPageWasOpened": true
       }
     },

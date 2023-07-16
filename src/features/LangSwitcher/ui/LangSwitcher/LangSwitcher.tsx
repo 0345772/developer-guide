@@ -16,12 +16,12 @@ interface LangSwitcherProps {
 export const LangSwitcher = memo(({ className, short }: LangSwitcherProps) => {
   const { t, i18n } = useTranslation();
   const toggle = async () => {
-    i18n.changeLanguage(i18n.language === 'ru' ? 'en' : 'ru');
+    await i18n.changeLanguage(i18n.language === 'ru' ? 'en' : 'ru');
   };
 
   return (
     <ToggleFeatures
-      feature={'isArticleRatingEnabled'}
+      feature={'isAppRedesigned'}
       on={
         <Button
           className={classNames('', {}, [className])}

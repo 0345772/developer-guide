@@ -120,5 +120,8 @@
   "Настройки": "Settings",
   "Варианты интерфейса": "Interface of variants",
   "Старый": "Old",
-  "Новый": "New"
+  "Новый": "New",
+  "{{count}} просмотров_zero": "{{count}} views",
+  "{{count}} просмотров_one": "{{count}} view",
+  "{{count}} просмотров_other": "{{count}} views"
 }
