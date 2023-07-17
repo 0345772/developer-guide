@@ -22,10 +22,10 @@ interface TextProps {
 type HeaderTagType = 'h1' | 'h2' | 'h3' | 'h4';
 
 const mapSizeToClass: Record<TextSize, string> = {
-  mini: 'size_mini',
-  s: 'size_s',
-  m: 'size_m',
-  l: 'size_l',
+  mini: cls['size_mini'],
+  s: cls['size_s'],
+  m: cls['size_m'],
+  l: cls['size_l'],
 };
 
 const mapSizeToHeaderTag: Record<TextSize, HeaderTagType> = {
