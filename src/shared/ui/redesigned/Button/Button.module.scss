@@ -1,5 +1,5 @@
 .Button {
-    padding: 6px 15px;
+    padding: 6px 16px;
     cursor: pointer;
     color: var(--text-redesigned);
     display: flex;
@@ -42,10 +42,10 @@
 
 .outline {
     background: none;
-    border: 1px solid var(--icon-redesigned);
+    border: 2px solid var(--icon-redesigned);
     border-radius: 34px;
     &:hover {
-      border: 1px solid var(--accent-redesigned);
+      border: 2px solid var(--accent-redesigned);
     }
 }
 
