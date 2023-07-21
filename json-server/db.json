@@ -991,7 +991,7 @@
       },
       "avatar": "https://img.freepik.com/free-photo/half-profile-image-of-handsome-young-caucasian-man-with-good-skin-brown-eyes-black-stylish-hair-and-stubble-posing-isolated-against-blank-wall-looking-in-front-of-him-smiling_343059-4560.jpg?w=900&t=st=1689095031~exp=1689095631~hmac=5d19010b2e5867fb1dd94953c66b93009b5eec8bc5348504ad7c1085b72e9164",
       "jsonSettings": {
-        "theme": "app_orange_theme",
+        "theme": "app_dark_theme",
         "isFirstVisit": true,
         "settingsPageHasBeenOpen": false,
         "isArticlesPageWasOpened": true
@@ -1011,7 +1011,7 @@
       },
       "avatar": "https://img.freepik.com/free-photo/portrait-of-white-man-isolated_53876-40306.jpg?w=826&t=st=1689163372~exp=1689163972~hmac=84dcb7c69c305dacecd2284c9f2f40c7295713ddde1db5fe4f266ee31a4ef65e",
       "jsonSettings": {
-        "theme": "app_light_theme",
+        "theme": "app_orange_theme",
         "isArticlesPageWasOpened": true
       }
     },
@@ -1029,7 +1029,7 @@
       },
       "avatar": "https://img.freepik.com/premium-vector/3d-man-avatar-happy-smiling-face-icon-young-businessman-student-or-freelancer_313242-1219.jpg?w=740",
       "jsonSettings": {
-        "theme": "app_orange_theme",
+        "theme": "app_dark_theme",
         "isArticlesPageWasOpened": true
       }
     },
@@ -1051,6 +1051,26 @@
         "settingsPageHasBeenOpen": true,
         "isArticlesPageWasOpened": true
       }
+    },
+    {
+      "id": "5",
+      "username": "Karolina",
+      "password": "123",
+      "roles": [
+        "USER"
+      ],
+      "features": {
+        "isArticleRatingEnabled": false,
+        "isCounterEnabled": true,
+        "isAppRedesigned": true
+      },
+      "avatar": "d:/work/MY-COURSE/developer-guide/src/shared/assets/my-icons/karolina-1.jpg",
+      "jsonSettings": {
+        "theme": "app_orange_theme",
+        "isFirstVisit": true,
+        "settingsPageHasBeenOpen": true,
+        "isArticlesPageWasOpened": true
+      }
     }
   ],
   "profile": [
@@ -1058,7 +1078,7 @@
       "id": "1",
       "first": "Vasyl",
       "lastname": "Step",
-      "age": 55,
+      "age": 58,
       "currency": "EUR",
       "country": "Ukraine",
       "city": "Kyiv",
@@ -1097,6 +1117,17 @@
       "city": "Neapol",
       "username": "testuser",
       "avatar": "https://images.pexels.com/photos/247502/pexels-photo-247502.jpeg?cs=srgb&dl=pexels-pixabay-247502.jpg&fm=jpg"
+    },
+    {
+      "id": "5",
+      "first": "Karolina",
+      "lastname": "Komarova",
+      "age": 7,
+      "currency": "EUR",
+      "country": "Italy",
+      "city": "Neapol",
+      "username": "user",
+      "avatar": "D:/work/MY-COURSE/developer-guide/src/shared/assets/my-icons/karolina-2.jpg"
     }
   ],
   "article-ratings": [
