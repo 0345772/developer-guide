@@ -1007,11 +1007,11 @@
       "features": {
         "isArticleRatingEnabled": false,
         "isCounterEnabled": false,
-        "isAppRedesigned": true
+        "isAppRedesigned": false
       },
       "avatar": "https://img.freepik.com/free-photo/portrait-of-white-man-isolated_53876-40306.jpg?w=826&t=st=1689163372~exp=1689163972~hmac=84dcb7c69c305dacecd2284c9f2f40c7295713ddde1db5fe4f266ee31a4ef65e",
       "jsonSettings": {
-        "theme": "app_orange_theme",
+        "theme": "app_light_theme",
         "isArticlesPageWasOpened": true
       }
     },
@@ -1064,9 +1064,9 @@
         "isCounterEnabled": true,
         "isAppRedesigned": true
       },
-      "avatar": "d:/work/MY-COURSE/developer-guide/src/shared/assets/my-icons/karolina-1.jpg",
+      "avatar": "D:/work/MY-COURSE/developer-guide/src/shared/assets/my-icons/karolina-1.jpg",
       "jsonSettings": {
-        "theme": "app_orange_theme",
+        "theme": "app_light_theme",
         "isFirstVisit": true,
         "settingsPageHasBeenOpen": true,
         "isArticlesPageWasOpened": true
