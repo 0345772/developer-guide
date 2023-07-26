@@ -9,7 +9,7 @@ interface ThemeProviderProps {
   children?: ReactNode;
 }
 
-const fullbackTheme = localStorage.getItem(LOCAL_STORAGE_THEME_KEY) as Theme;
+const fallbackTheme = localStorage.getItem(LOCAL_STORAGE_THEME_KEY) as Theme;
 
 const ThemeProvider = (props: ThemeProviderProps) => {
   const { initialTheme, children } = props;
@@ -17,7 +17,7 @@ const ThemeProvider = (props: ThemeProviderProps) => {
   const [isThemeInited, setThemeInited] = useState(false);
 
   const [theme, setTheme] = useState<Theme>(
-    initialTheme || fullbackTheme || Theme.LIGHT,
+    initialTheme || fallbackTheme || Theme.LIGHT,
   );
 
   useEffect(() => {
