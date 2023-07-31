@@ -24,7 +24,7 @@ export const Code = memo((props: CodeProps) => {
 
   return (
     <ToggleFeatures
-      feature={'isAppRedesigned'}
+      feature="isAppRedesigned"
       on={
         <pre className={classNames(cls.CodeRedesigned, {}, [className])}>
           <Icon

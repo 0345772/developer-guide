@@ -1,21 +1,21 @@
 .BIG {
-    .card {
-        margin-bottom: 20px;
-    }
+  .card {
+    margin-bottom: 20px;
+  }
 }
 
 .SMALL {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+
+  .card {
+    display: inline-flex;
+    height: 300px;
+  }
+
+  .row {
     display: flex;
-    flex-wrap: wrap;
     gap: 30px;
-
-    .card {
-        display: inline-flex;
-        height: 300px;
-    }
-
-    .row {
-        display: flex;
-        gap: 30px;
-    }
+  }
 }

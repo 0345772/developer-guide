@@ -20,6 +20,7 @@ import { ToggleFeatures } from '@/shared/lib/features';
 import { StickyContentLayout } from '@/shared/layouts/StickyContentLayout';
 import { ViewSelectorContainer } from '../ViewSelectorContainer/ViewSelectorContainer';
 import { FiltersContainer } from '../FiltersContainer/FiltersContainer';
+
 interface ArticlesPageProps {
   className?: string;
 }
@@ -44,7 +45,7 @@ const ArticlesPage = memo((props: ArticlesPageProps) => {
 
   const content = (
     <ToggleFeatures
-      feature={'isAppRedesigned'}
+      feature="isAppRedesigned"
       on={
         <StickyContentLayout
           left={<ViewSelectorContainer />}

@@ -7,7 +7,6 @@ import { HStack, VStack } from '@/shared/ui/redesigned/Stack';
 import { Avatar } from '@/shared/ui/redesigned/Avatar';
 import { Input } from '@/shared/ui/redesigned/Input';
 import { CountrySelect } from '@/entities/Country';
-import { classNames } from '@/shared/lib/classNames/classNames';
 import { CurrencySelect } from '@/entities/Currency';
 import { Skeleton } from '@/shared/ui/redesigned/Skeleton';
 import { Text } from '@/shared/ui/redesigned/Text';
@@ -31,7 +30,7 @@ export const ProfileCardRedesignedSkeleton = () => {
     <Card padding="24" max>
       <VStack gap="32">
         <HStack max justify="center">
-          <Skeleton border={'100%'} width={128} height={128} />
+          <Skeleton border="100%" width={128} height={128} />
         </HStack>
         <HStack gap="32" max>
           <VStack gap="16" max>
@@ -72,7 +71,7 @@ export const ProfileCardRedesigned = memo((props: ProfileCardProps) => {
       <VStack gap="32">
         {data?.avatar && (
           <HStack className={cls.avatarWrapper} justify="center" max>
-            {<Avatar size={128} src={data?.avatar} />}
+            <Avatar size={128} src={data?.avatar} />
           </HStack>
         )}
 

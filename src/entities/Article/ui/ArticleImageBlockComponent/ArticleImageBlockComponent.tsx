@@ -23,7 +23,7 @@ export const ArticleImageBlockComponent = memo(
         <img src={block?.src} alt={block?.title} className={cls.img} />
         {block?.title && (
           <ToggleFeatures
-            feature={'isArticleRatingEnabled'}
+            feature="isArticleRatingEnabled"
             on={<Text text={block.title} align="center" />}
             off={<TextDeprecated text={block.title} align={TextAlign.CENTER} />}
           />

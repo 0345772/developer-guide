@@ -67,9 +67,8 @@ export const RatingCard = memo((props: RatingCardProps) => {
   }, [onCancel, starsCount]);
 
   const modalContent = (
-    <>
-      <ToggleFeatures
-        feature={'isArticleRatingEnabled'}
+    <ToggleFeatures
+        feature="isArticleRatingEnabled"
         on={
           <>
             <Text title={feedbackTitle} />
@@ -93,14 +92,13 @@ export const RatingCard = memo((props: RatingCardProps) => {
           </>
         }
       />
-    </>
   );
 
   return (
     <CardDeprecated className={className} max data-testid="RatingCard">
       <VStack align="center" gap="8">
         <ToggleFeatures
-          feature={'isAppRedesigned'}
+          feature="isAppRedesigned"
           on={<Text title={starsCount ? t('Спасибо за оценку!') : title} />}
           off={
             <TextDeprecated

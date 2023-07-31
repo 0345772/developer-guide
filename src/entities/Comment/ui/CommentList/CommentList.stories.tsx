@@ -1,5 +1,6 @@
 import { ComponentMeta, ComponentStory } from '@storybook/react';
 import { CommentList } from './CommentList';
+import { NewDesignDecorator } from '@/shared/config/storybook/NewDesignDecorator/NewDesignDecorator';
 
 export default {
     title: 'entities/Comment/CommentList',
@@ -13,21 +14,27 @@ const Template: ComponentStory<typeof CommentList> = (args) => (
     <CommentList {...args} />
 );
 
-export const Normal = Template.bind({});
-Normal.args = {
-    comments: [
-        {
-            id: '1',
-            text: 'Hello, my frend!',
-            user: { id: '1', username: 'Bush' },
-        },
-        {
-            id: '2',
-            text: 'Hello, my Amigo!!',
-            user: { id: '2', username: 'Tomy' },
-        },
-    ],
+const normalArgs = {
+  comments: [
+    {
+      id: '1',
+      text: 'Hello, my frend!',
+      user: { id: '1', username: 'Bush' },
+    },
+    {
+      id: '2',
+      text: 'Hello, my Amigo!!',
+      user: { id: '2', username: 'Tomy' },
+    },
+  ],
 };
+
+export const Normal = Template.bind({});
+Normal.args = normalArgs;
+
+export const NormalRedesigned= Template.bind({});
+NormalRedesigned.args = normalArgs;
+NormalRedesigned.decorators = [NewDesignDecorator]
 
 export const Loading = Template.bind({});
 Loading.args = {

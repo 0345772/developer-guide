@@ -51,7 +51,7 @@ export const EditableProfileCardHeader = memo(
 
     return (
       <ToggleFeatures
-        feature={'isAppRedesigned'}
+        feature="isAppRedesigned"
         on={
           <Card max border="partial" padding="24">
             <HStack

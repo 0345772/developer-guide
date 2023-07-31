@@ -56,7 +56,7 @@ export const ArticleSortSelector = (props: ArticleSortSelectorProps) => {
 
   return (
     <ToggleFeatures
-      feature={'isAppRedesigned'}
+      feature="isAppRedesigned"
       on={
         <div
           className={classNames(cls.ArticleSortSelectorRedesigned, {}, [

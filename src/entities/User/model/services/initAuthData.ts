@@ -1,5 +1,5 @@
-import { ThunkConfig } from "@/app/providers/StoreProvider";
 import { createAsyncThunk } from "@reduxjs/toolkit";
+import { ThunkConfig } from "@/app/providers/StoreProvider";
 import { User } from "../types/user";
 import {
   LOCAL_STORAGE_LAST_DESIGN_KEY,

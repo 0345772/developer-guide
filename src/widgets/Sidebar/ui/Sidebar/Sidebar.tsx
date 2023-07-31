@@ -35,7 +35,7 @@ export const Sidebar = memo(({ className }: SidebarProps) => {
 
   return (
     <ToggleFeatures
-      feature={'isAppRedesigned'}
+      feature="isAppRedesigned"
       on={
         <aside
           data-testId="sidebarRedesigned"
@@ -63,7 +63,7 @@ export const Sidebar = memo(({ className }: SidebarProps) => {
             className={cls.collapseBtn}
             Svg={ArrowIcon}
             clickable
-          ></Icon>
+          />
 
           <div className={cls.switchers}>
             <ThemeSwitcher />

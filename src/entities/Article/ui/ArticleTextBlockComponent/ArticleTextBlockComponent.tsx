@@ -22,7 +22,7 @@ export const ArticleTextBlockComponent = memo(
       >
         {block?.title && (
           <ToggleFeatures
-            feature={'isAppRedesigned'}
+            feature="isAppRedesigned"
             on={<Text title={block.title} className={cls.title} />}
             off={<TextDeprecated title={block.title} className={cls.title} />}
           />

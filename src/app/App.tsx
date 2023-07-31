@@ -1,9 +1,9 @@
-import { Suspense, useEffect } from 'react';
+import { Suspense, memo, useEffect } from 'react';
 import { useSelector } from 'react-redux';
 import { classNames } from '@/shared/lib/classNames/classNames';
 import { Navbar } from '@/widgets/Navbar';
 import { Sidebar } from '@/widgets/Sidebar';
-import { getUserInited, initAuthData, userActions } from '@/entities/User';
+import { getUserInited, initAuthData } from '@/entities/User';
 import { useTheme } from '@/shared/lib/hooks/useTheme/useTheme';
 import AppRouter from './providers/router';
 import { useAppDispatch } from '@/shared/lib/hooks/useAppDispatch/useAppDispatch';
@@ -12,10 +12,9 @@ import { PageLoader } from '@/widgets/PageLoader';
 import { MainLayout } from '@/shared/layouts/MainLayout';
 import { AppLoaderLayout } from '@/shared/layouts/AppLoaderLayout';
 import { useAppToolbar } from './lib/useAppToolbar';
-import { ScrollToTopButton } from '@/features/scrollToTopButton';
-import { ScrollToolbar } from '@/widgets/ScrollToolbar';
+import { withTheme } from './providers/ThemeProvider/ui/withTheme';
 
-export const App = () => {
+const App = memo(() => {
   const { theme } = useTheme();
   const dispatch = useAppDispatch();
   const inited = useSelector(getUserInited);
@@ -28,7 +27,7 @@ export const App = () => {
   if (!inited) {
     return (
       <ToggleFeatures
-        feature={'isAppRedesigned'}
+        feature="isAppRedesigned"
         on={
           <div id="app" className={classNames('app_redesigned', {}, [theme])}>
             <AppLoaderLayout />
@@ -41,7 +40,7 @@ export const App = () => {
 
   return (
     <ToggleFeatures
-      feature={'isAppRedesigned'}
+      feature="isAppRedesigned"
       on={
         <div id="app" className={classNames('app_redesigned', {}, [theme])}>
           <Suspense fallback="">
@@ -67,4 +66,6 @@ export const App = () => {
       }
     />
   );
-};
+});
+
+export default withTheme(App);

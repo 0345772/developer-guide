@@ -45,7 +45,7 @@ export const ArticleList = memo((props: ArticleListProps) => {
 
   return (
     <ToggleFeatures
-      feature={'isAppRedesigned'}
+      feature="isAppRedesigned"
       on={
         <HStack
           max

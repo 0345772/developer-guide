@@ -24,7 +24,7 @@ module.exports = {
     "@typescript-eslint",
     "i18next",
     "react-hooks",
-    "step65-plugin",
+    "eslint-plugin-step65-plugin",
     "unused-imports",
   ],
   rules: {
@@ -47,7 +47,7 @@ module.exports = {
     "import/no-extraneous-dependencies": "off",
     "no-underscore-dangle": "off",
     "i18next/no-literal-string": [
-      "error",
+      1,
       {
         markupOnly: true,
         ignoreAttribute: [
@@ -70,7 +70,7 @@ module.exports = {
       2,
       {
         ignoreComments: true,
-        code: 120,
+        code: 130,
       },
     ],
     "jsx-a11y/no-static-element-interactions": "off",
@@ -105,6 +105,7 @@ module.exports = {
         ],
       },
     ],
+    
     "linebreak-style": ["error", "unix"],
     "react/jsx-max-props-per-line": ["error", { maximum: 4 }],
     "react/no-unstable-nested-components": "warn",

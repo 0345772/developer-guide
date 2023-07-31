@@ -15,7 +15,6 @@ import { Card } from '@/shared/ui/redesigned/Card';
 import { Icon } from '@/shared/ui/redesigned/Icon';
 import { Skeleton } from '@/shared/ui/redesigned/Skeleton';
 import { AppImage } from '@/shared/ui/redesigned/AppImage';
-import { ArticleTextBlockComponent } from '../../ArticleTextBlockComponent/ArticleTextBlockComponent';
 import { ArticleListItemProps } from '../ArticleListItem';
 import { Text } from '@/shared/ui/redesigned/Text';
 import EyeIcon from '@/shared/assets/icons/eye.svg';
@@ -52,8 +51,8 @@ export const ArticleListItemRedesigned = memo((props: ArticleListItemProps) => {
         data-testid="ArticleListItem"
         className={classNames(cls.ArticleListItem, {}, [className, cls[view]])}
       >
-        <VStack max gap={'16'}>
-          <HStack max gap={'8'}>
+        <VStack max gap="16">
+          <HStack max gap="8">
             {userInfo}
             <Text text={article.createdAt} />
           </HStack>
@@ -61,7 +60,7 @@ export const ArticleListItemRedesigned = memo((props: ArticleListItemProps) => {
           <Text title={article.title} bold />
           <Text title={article.subtitle} size="s" />
           <AppImage
-            fallback={<Skeleton width={'100%'} height={200} />}
+            fallback={<Skeleton width="100%" height={200} />}
             src={article.img}
             className={cls.img}
             alt={article.title}
@@ -92,7 +91,7 @@ export const ArticleListItemRedesigned = memo((props: ArticleListItemProps) => {
     >
       <Card className={cls.card} border="round" padding="0">
         <AppImage
-          fallback={<Skeleton width={'100%'} height={200} />}
+          fallback={<Skeleton width="100%" height={200} />}
           alt={article.title}
           src={article.img}
           className={cls.image}

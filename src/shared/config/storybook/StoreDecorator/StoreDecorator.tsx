@@ -5,6 +5,7 @@ import { profileReducer } from '@/features/editableProfileCard/testing';
 import { loginReducer } from '@/features/AuthByUsername/testing';
 import { addCommentFormReducer } from '@/features/addCommentForm/testing';
 import { articleDetailsPageReducer } from '@/pages/ArticleDetailsPage/testing';
+import {Story} from '@storybook/react'
 
 const defaultAsyncReducers: ReducersList = {
     loginForm: loginReducer,
@@ -16,7 +17,7 @@ const defaultAsyncReducers: ReducersList = {
 
 export const StoreDecorator =
     (state: DeepPartial<StateSchema>, asyncReducers?: ReducersList) =>
-    (StoryComponent: any) =>
+    (StoryComponent: Story) =>
         (
             <StoreProvider
                 initialState={state}

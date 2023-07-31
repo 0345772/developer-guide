@@ -1,4 +1,4 @@
-import React, { memo, SVGProps } from 'react';
+import React, { memo } from 'react';
 import { classNames } from '@/shared/lib/classNames/classNames';
 import cls from './Icon.module.scss';
 
@@ -43,7 +43,7 @@ export const Icon = memo((props: IconProps) => {
   if (props.clickable) {
     return (
       <button
-        type={'button'}
+        type="button"
         className={cls.button}
         onClick={props.onClick}
         style={{ width, height }}

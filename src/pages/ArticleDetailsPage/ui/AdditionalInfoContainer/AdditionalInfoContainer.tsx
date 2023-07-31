@@ -1,11 +1,10 @@
-import { getArticleDetailsData } from '@/entities/Article';
-import { User } from '@/entities/User';
-import { Card } from '@/shared/ui/redesigned/Card';
-import { ArticleAdditionalInfo } from '@/widgets/ArticleAdditionalInfo';
 import { memo, useCallback } from 'react';
 import { useSelector } from 'react-redux';
-import cls from './AdditionalInfoContainer.module.scss';
 import { useNavigate } from 'react-router-dom';
+import { getArticleDetailsData } from '@/entities/Article';
+import { Card } from '@/shared/ui/redesigned/Card';
+import { ArticleAdditionalInfo } from '@/widgets/ArticleAdditionalInfo';
+import cls from './AdditionalInfoContainer.module.scss';
 import { getRouteArticleEdit } from '@/shared/const/router';
 
 export const AdditionalInfoContainer = memo(() => {

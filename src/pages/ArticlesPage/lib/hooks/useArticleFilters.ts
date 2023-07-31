@@ -1,4 +1,5 @@
 import { useSelector } from "react-redux";
+import { useCallback } from "react";
 import {
   getArticlesPageView,
   getArticlesPageSort,
@@ -10,7 +11,6 @@ import { useAppDispatch } from "@/shared/lib/hooks/useAppDispatch/useAppDispatch
 import { ArticleView, ArticleSortField, ArticleType } from "@/entities/Article";
 import { useDebounce } from "@/shared/lib/hooks/useDebounce/useDebounce";
 import { SortOrder } from "@/shared/types/sort";
-import { useCallback } from "react";
 import { fetchArticlesList } from "../../model/services/fetchArticlesList/fetchArticlesList";
 import { articlesPageActions } from "../../model/slices/articlesPageSlice";
 

@@ -6,7 +6,7 @@ import cls from './ListBox.module.scss';
 import { mapDirectionClass } from '../../styles/consts';
 import popupCls from '../../styles/popup.module.scss';
 import { Button } from '../../../Button';
-import { HStack } from '@/shared/ui/redesigned/Stack';
+import { HStack } from '../../../Stack';
 import ArrowIcon from '@/shared/assets/icons/arrow-bottom.svg';
 import { Icon } from '../../../Icon';
 

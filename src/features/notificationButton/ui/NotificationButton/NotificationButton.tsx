@@ -13,7 +13,6 @@ import { Popover as PopoverDeprecated } from '@/shared/ui/deprecated/Popups';
 import { Drawer } from '@/shared/ui/redesigned/Drawer';
 import cls from './NotificationButton.module.scss';
 import { ToggleFeatures } from '@/shared/lib/features';
-import { Button } from '@/shared/ui/redesigned/Button';
 import { Icon } from '@/shared/ui/redesigned/Icon';
 import { Popover } from '@/shared/ui/redesigned/Popups';
 
@@ -36,7 +35,7 @@ export const NotificationButton = memo((props: NotificationButtonProps) => {
 
   const trigger = (
     <ToggleFeatures
-      feature={'isAppRedesigned'}
+      feature="isAppRedesigned"
       on={<Icon Svg={NotificationIcon} clickable onClick={onOpenDrawer} />}
       off={
         <ButtonDeprecated onClick={onOpenDrawer} theme={ButtonTheme.CLEAR}>
@@ -50,7 +49,7 @@ export const NotificationButton = memo((props: NotificationButtonProps) => {
     <div>
       <BrowserView>
         <ToggleFeatures
-          feature={'isAppRedesigned'}
+          feature="isAppRedesigned"
           on={
             <Popover
               className={classNames(cls.NotificationButton, {}, [className])}

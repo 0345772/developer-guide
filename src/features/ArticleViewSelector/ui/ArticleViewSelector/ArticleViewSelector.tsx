@@ -50,7 +50,7 @@ export const ArticleViewSelector = memo((props: ArticleViewSelectorProps) => {
 
   return (
     <ToggleFeatures
-      feature={'isAppRedesigned'}
+      feature="isAppRedesigned"
       on={
         <Card
           className={classNames(cls.ArticleViewSelectorRedesigned, {}, [

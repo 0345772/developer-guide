@@ -39,7 +39,7 @@ export const CommentList = memo((props: CommentListProps) => {
         ))
       ) : (
         <ToggleFeatures
-          feature={'isAppRedesigned'}
+          feature="isAppRedesigned"
           on={<Text text={t('Комментарии отсутствуют')} />}
           off={<TextDeprecated text={t('Комментарии отсутствуют')} />}
         />

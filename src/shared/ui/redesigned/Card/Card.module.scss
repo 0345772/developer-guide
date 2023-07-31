@@ -1,58 +1,52 @@
 .Card {
-    padding: 15px;
+  padding: 15px;
 }
 
 .withoutPadding {
-    padding: 0;
+  padding: 0;
 }
 
 .normal {
-    background: var(--dark-bg-redesigned);
+  background: var(--dark-bg-redesigned);
+  border-radius: 12px;
 }
 
 .outlined {
-    border: 1px solid var(--accent-redesigned);
+  border: 1px solid var(--accent-redesigned);
 }
 
 .light {
-    background: var(--light-bg-redesigned)
-}
-
-.normal {
-    border-radius: 12px;
-
+  background: var(--light-bg-redesigned);
 }
 
 .round {
-    border-radius: 40px;
+  border-radius: 40px;
 }
 
 .partial {
-    border-radius: 20px;
-    -webkit-border-radius: 20px;
-    -moz-border-radius: 20px;
-    -ms-border-radius: 20px;
-    -o-border-radius: 20px;
+  border-radius: 20px;
 }
 
 .max {
-    width: 100%;
+  width: 100%;
 }
 
 .gap_0 {
-    padding: 0;
+  padding: 0;
 }
+
 .gap_8 {
-    padding: 8px;
+  padding: 8px;
 }
+
 .gap_16 {
-    padding: 16px;
+  padding: 16px;
 }
+
 .gap_24 {
-    padding: 24px;
+  padding: 24px;
 }
+
 .fullHeight {
-    height: 100%;
+  height: 100%;
 }
-
-

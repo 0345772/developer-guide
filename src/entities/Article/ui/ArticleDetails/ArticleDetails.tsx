@@ -1,5 +1,5 @@
 import { useTranslation } from 'react-i18next';
-import { memo, useCallback, useEffect } from 'react';
+import { memo, useEffect } from 'react';
 import { useSelector } from 'react-redux';
 import {
   DynamicModuleLoader,
@@ -13,14 +13,11 @@ import {
   TextSize,
 } from '@/shared/ui/deprecated/Text';
 import { Skeleton as SkeletonDeprecated } from '@/shared/ui/deprecated/Skeleton';
-import { Skeleton as SkeletonRedesigned } from '@/shared/ui/redesigned/Skeleton';
+import { Skeleton as SkeletonRedesigned  } from '@/shared/ui/redesigned/Skeleton';
 import { Avatar as AvatarDeprecated } from '@/shared/ui/deprecated/Avatar';
 import EyeIcon from '@/shared/assets/icons/eye-20-20.svg';
 import CalendarIcon from '@/shared/assets/icons/calendar-20-20.svg';
 import { Icon as IconDeprecated } from '@/shared/ui/deprecated/Icon';
-import { ArticleCodeBlockComponent } from '../../ui/ArticleCodeBlockComponent/ArticleCodeBlockComponent';
-import { ArticleImageBlockComponent } from '../../ui/ArticleImageBlockComponent/ArticleImageBlockComponent';
-import { ArticleTextBlockComponent } from '../../ui/ArticleTextBlockComponent/ArticleTextBlockComponent';
 import { fetchArticleById } from '../../model/services/fetchArticleById/fetchArticleById';
 import cls from './ArticleDetails.module.scss';
 import {
@@ -28,15 +25,12 @@ import {
   getArticleDetailsError,
   getArticleDetailsIsLoading,
 } from '../../model/selectors/articleDetails';
-import { ArticleBlock } from '../../model/types/article';
-import { ArticleBlockType } from '../../model/consts/articleConsts';
 import { articleDetailsReducer } from '../../model/slice/articleDetailsSlice';
 import { HStack, VStack } from '@/shared/ui/redesigned/Stack';
 import { renderArticleBlock } from './renderBlock';
 import { ToggleFeatures, toggleFeatures } from '@/shared/lib/features';
 import { Text } from '@/shared/ui/redesigned/Text';
 import { AppImage } from '@/shared/ui/redesigned/AppImage';
-import { Skeleton } from '@/shared/ui/redesigned/Skeleton';
 
 interface ArticleDetailsProps {
   className?: string;
@@ -56,7 +50,7 @@ const Redesigned = () => {
 
       <AppImage
         fallback={
-          <SkeletonRedesigned width="100%" height={'420px'} border={'16px'} />
+          <SkeletonRedesigned width="100%" height="420px" border="16px" />
         }
         className={cls.img}
         src={article?.img}
@@ -145,7 +139,7 @@ export const ArticleDetails = memo((props: ArticleDetailsProps) => {
   } else {
     content = (
       <ToggleFeatures
-        feature={'isAppRedesigned'}
+        feature="isAppRedesigned"
         on={<Redesigned />}
         off={<Deprecated />}
       />

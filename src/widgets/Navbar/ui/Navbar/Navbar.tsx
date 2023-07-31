@@ -44,7 +44,7 @@ export const Navbar = memo(({ className }: NavbarProps) => {
   if (authData) {
     return (
       <ToggleFeatures
-        feature={'isAppRedesigned'}
+        feature="isAppRedesigned"
         on={
           <header className={classNames(cls.NavbarRedesigned, {}, [className])}>
             <HStack gap="16" className={cls.actions}>
@@ -80,7 +80,7 @@ export const Navbar = memo(({ className }: NavbarProps) => {
   return (
     <header className={classNames(mainClass, {}, [className])}>
       <ToggleFeatures
-        feature={'isAppRedesigned'}
+        feature="isAppRedesigned"
         on={
           <Button variant="clear" className={cls.links} onClick={onShowModal}>
             {t('Войти')}
