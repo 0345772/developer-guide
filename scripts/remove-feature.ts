@@ -139,7 +139,7 @@ const replaceComponent = (node: Node) => {
 };
 
 files.forEach((sourceFile) => {
-  sourceFile.forEachDescendant((node) => {
+  (sourceFile.forEachDescendant((node) => {
     if (node.isKind(SyntaxKind.CallExpression) && isToggleFunction(node)) {
       return replaceToggleFunction(node);
     }
@@ -149,6 +149,6 @@ files.forEach((sourceFile) => {
     ) {
       return replaceComponent(node);
     }
-  });
+  }));
 });
 project.save();

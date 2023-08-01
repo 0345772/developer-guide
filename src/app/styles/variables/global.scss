@@ -32,14 +32,12 @@
   --logo-1-text: rgb(40 55 156 / 70.1%);
 
   // redesigned
-
   // mini
-
+  /* stylelint-disable-next-line CssSyntaxError */
   --font-mini-redesigned:
+    /* stylelint-disable-next-line CssSyntaxError */
     var(--font-size-mini) / var(--font-line-mini) / var(--font-family-text-redesigned)
-
-    // s
-    --font-s-redesigned: var(--font-size-s) / var(--font-line-s) var(--font-family-text-redesigned);
+    --f    t-s-redesigned: var(--font-size-s) / var(--font-line-s) var(--font-family-text-redesigned);
 
   // m
   --font-m-redesigned: var(--font-size-m) / var(--font-line-m) var(--font-family-text-redesigned);

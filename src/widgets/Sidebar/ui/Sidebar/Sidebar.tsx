@@ -38,7 +38,7 @@ export const Sidebar = memo(({ className }: SidebarProps) => {
       feature="isAppRedesigned"
       on={
         <aside
-          data-testId="sidebarRedesigned"
+          data-testid="sidebarRedesigned"
           className={classNames(
             cls.SidebarRedesigned,
             { [cls.collapsedRedesigned]: collapsed },
@@ -58,7 +58,7 @@ export const Sidebar = memo(({ className }: SidebarProps) => {
           </VStack>
 
           <Icon
-            data-testId="sidebar-toggle"
+            data-testid="sidebar-toggle"
             onClick={onToggle}
             className={cls.collapseBtn}
             Svg={ArrowIcon}
@@ -74,14 +74,14 @@ export const Sidebar = memo(({ className }: SidebarProps) => {
       off={
         <aside
           // eslint-disable-next-line i18next/no-literal-string
-          data-testId="sidebar"
+          data-testid="sidebar"
           className={classNames(cls.Sidebar, { [cls.collapsed]: collapsed }, [
             className,
           ])}
         >
           <Button
             // eslint-disable-next-line
-            data-testId="sidebar-toggle"
+            data-testid="sidebar-toggle"
             onClick={onToggle}
             className={cls.collapseBtn}
             theme={ButtonTheme.BACKGROUND_INVERTED}

@@ -33,14 +33,13 @@ export const profileSlice = createSlice({
     extraReducers: (builder) => {
         builder
             .addCase(fetchProfileData.pending, (state) => {
-                state.validateErrors = undefined;
+                state.error = undefined;
                 state.isLoading = true;
             })
             .addCase(
                 fetchProfileData.fulfilled,
                 (state, action: PayloadAction<Profile>) => {
                     state.isLoading = false;
-                    state.error = undefined;
                     state.data = action.payload;
                     state.form = action.payload;
                 },
@@ -60,6 +59,7 @@ export const profileSlice = createSlice({
                     state.data = action.payload;
                     state.form = action.payload;
                     state.readonly = true;
+                    state.validateErrors = undefined;
                 },
             )
             .addCase(updateProfileData.rejected, (state, action) => {
